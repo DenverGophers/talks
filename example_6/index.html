@@ -1,0 +1,213 @@
+<html>
+<head>
+<script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/1.9.1/jquery.min.js" ></script>
+<script src="https://raw.github.com/rmm5t/jquery-timeago/master/jquery.timeago.js" ></script>
+<script src="http://cdnjs.cloudflare.com/ajax/libs/knockout/2.2.1/knockout-min.js" ></script>
+<link href="http://netdna.bootstrapcdn.com/twitter-bootstrap/2.3.0/css/bootstrap-combined.min.css" rel="stylesheet">
+<title>MGO TODO Example</title>
+</head>
+<body>
+<table class="table">
+  <tr><td>
+      <input type="text" data-bind="value: task, valueUpdate: 'afterkeydown'">
+      <input type="date" data-bind="value: due, valueUpdate: 'blur'">
+      <button class="btn" data-bind="click: addTask">Add New Task</button>
+  </td></tr>
+  <tr><td>
+    <table class="table table-condensed">
+      <thead>
+        <tr>
+          <th>Id</th>
+          <th>Task</th>
+          <th>Created</th>
+          <th>Updated</th>
+          <th>Due</th>
+          <th>Completed</th>
+          <th>Actions</th>
+        </tr>
+      </thead>
+      <tbody data-bind="template: { name: 'todo-template', foreach: todos }"></tbody>
+    </table>  
+  </td></tr>
+</table>
+<script type="text/html" id="todo-template">
+<tr data-bind="css: { hidden: destroying() || editing() }">
+  <td data-bind="text: id"></td>
+  <td data-bind="text: task"></td>
+  <td><time data-bind="timeago: created"</time></td>
+  <td><time data-bind="timeago: updated, css: { hidden: updated() === '' }"</time></td>
+  <td data-bind="text: due"></td>
+  <td><time data-bind="timeago: completed, css: { hidden: completed() === '' }"</time></td>
+  <td>
+    <a href="#" data-bind="click: complete, css: { hidden: hideCompleted() }">Mark Completed</a>
+    <a href="#" data-bind="click: uncomplete, css: { hidden: !hideCompleted() }">Mark Uncompleted</a>
+    |
+    <a href="#" data-bind="click: edit">Edit</a>
+    |
+    <a href="#" data-bind="click: confirmDestroy">Delete</a>
+  </td>
+</tr>
+<tr data-bind="css: { hidden: !editing() }">
+  <td colspan=7>
+    <input type="text" data-bind="value: task, valueUpdate: 'afterkeydown'">
+    <input type="date" data-bind="value: due, valueUpdate: 'blur'">
+    <button class="btn" data-bind="click: save">Save</button>
+    <button class="btn" data-bind="click: cancelEdit">Cancel</button>
+  </td>
+</tr>
+<tr data-bind="css: { hidden: !destroying() }">
+  <td colspan=6>Are you sure you want to delete this todo?</td>
+  <td><a href="#" data-bind="click: $root.destroy">Yes</a> <a href="#" data-bind="click: cancelDestroy">No</a></td>
+</tr>
+
+</script>
+
+<script>
+$(function() {
+  ko.bindingHandlers.timeago = {
+    update: function(element, valueAccessor) {
+      var $this, datetime, distance, inWords, value;
+
+      value = ko.utils.unwrapObservable(valueAccessor());
+      $this = $(element);
+      $this.attr(($.timeago.isTime($this) ? "datetime" : "title"), value);
+      if ($this.data("timeago")) {
+        datetime = $.timeago.datetime($this);
+        distance = new Date().getTime() - datetime.getTime();
+        inWords = $.timeago.inWords(distance);
+        $this.data("timeago", {
+          datetime: datetime
+        });
+        return $this.text(inWords);
+      } else {
+        return $this.timeago();
+      }
+    }
+  };
+
+  var app = window.app = {};
+
+  app.formatHtml5DateString = function(d) {
+      return "" + d.getFullYear() + "-" + ("0" + d.getMonth()).slice(-2) + "-" + ("0" + d.getDate()).slice(-2);
+  };
+
+  app.models = {};
+  app.models.todo = function(attrs){
+    var self = this;
+    self.id = "";
+    self.task = ko.observable();
+    self.created = "";
+    self.updated = ko.observable();
+    self.due = ko.observable();
+    self.completed = ko.observable();
+
+    self.load = function(attrs) {
+      self.id = attrs['id'];
+      self.task(attrs['t']);
+      self.created = attrs['c'];
+      self.updated(attrs['u'] == "0001-01-01T00:00:00Z" ? "" : attrs['u']);
+      self.due(attrs['d'] == "0001-01-01T00:00:00Z" ? "" : app.formatHtml5DateString(new Date(attrs['d'])));
+      self.completed(attrs['cp'] == "0001-01-01T00:00:00Z" ? "" : attrs['cp']);
+    };
+    self.load(attrs);
+
+    self.destroying = ko.observable(false);
+    self.confirmDestroy = function() {
+      self.destroying(true);
+    };
+    self.cancelDestroy = function() {
+      self.destroying(false);
+    };
+    self.editing = ko.observable(false);
+    self.edit = function() {
+      self.editing(true);
+    };
+    self.cancelEdit = function() {
+      self.editing(false);
+    };
+    self.save = function() {
+      $.ajax({
+          url: "/todos/" + self.id,
+          type: 'PUT',
+          data: ko.toJSON({id: self.id, task: self.task(), due: new Date(self.due())}),
+          success: function(response) {
+            self.load(response.d.todo);
+            self.editing(false);
+          }
+      });
+    };
+
+    self.hideCompleted = ko.computed(function() {
+      return self.completed() !== "";
+    });
+    self.complete = function() {
+      $.getJSON("/todos/" + self.id + "/complete?t=" + new Date().getTime(), function(response) {
+        if (response.d.success) {
+          self.load(response.d.todo);
+        }
+      });
+    };
+
+    self.uncomplete = function() {
+      $.getJSON("/todos/" + self.id + "/uncomplete?t=" + new Date().getTime(), function(response) {
+        if (response.d.success) {
+          self.load(response.d.todo);
+        }
+      });
+    };
+    return self;
+  };
+
+  app.viewModel = function() {
+    var self = this;
+    self.task = ko.observable("");
+    self.due = ko.observable(app.formatHtml5DateString(new Date()));
+    self.todos = ko.observableArray();
+    self.sortTodos = function() {
+      self.todos.sort(function(left, right) {
+        return left.id === right.id ? 0 : left.id > right.id ? 1 : -1;
+      });
+    };
+    $.getJSON("/todos?t=" + new Date().getTime(), function(response) {
+      $.each(response.d, function(index, value) {
+        self.todos.push(new app.models.todo(value));
+      });
+      self.sortTodos();
+    });
+    self.addTask = function() {
+      if (self.task() !== "") {
+        var data = {task: self.task(), due: new Date(self.due())};
+        $.ajax({
+            url: "/todos",
+            type: 'POST',
+            data: ko.toJSON(data),
+            success: function(response) {
+              self.task("");
+              self.due(app.formatHtml5DateString(new Date()))
+              if (response.d.success) {
+                self.todos.push(new app.models.todo(response.d.todo));
+              };
+              self.sortTodos();
+            }
+        });
+      };
+    };
+    self.destroy = function(todo) {
+      $.ajax({
+          url: "/todos/" + todo.id,
+          type: 'DELETE',
+          success: function(response) {
+            self.todos.remove(function(val) {
+              return todo.id === val.id;
+            });
+          }
+      });
+    };
+  };
+  viewModel = new app.viewModel()
+  ko.applyBindings(viewModel);
+});
+</script>
+
+</body>
+</html>

@@ -10,7 +10,7 @@ import (
 
 type (
 	Todo struct {
-		Id        bson.ObjectId `json:"id"    bson:"_id"`
+		Id        bson.ObjectId `bson:"_id"`
 		Task      string        `bson:"t"`
 		Created   time.Time     `bson:"c"`
 		Updated   time.Time     `bson:"u,omitempty"`

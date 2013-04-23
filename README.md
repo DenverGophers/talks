@@ -6,6 +6,7 @@ References
 ------------
 
 - [mgo](http://labix.org/mgo)
+- [mgo/bson](http://godoc.org/labix.org/v2/mgo/bson)
 - [go structs](http://golang.org/ref/spec#Struct_types)
 - [go reflect package](http://golang.org/pkg/reflect/#StructField)
 
