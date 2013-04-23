@@ -169,7 +169,7 @@ $(function() {
       });
     };
     $.getJSON("/todos?t=" + new Date().getTime(), function(response) {
-      $.each(response.d, function(index, value) {
+      $.each($.makeArray(response.d), function(index, value) {
         self.todos.push(new app.models.todo(value));
       });
       self.sortTodos();

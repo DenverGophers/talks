@@ -22,7 +22,7 @@ func main() {
 	}
   log.Println("Connected to mongodb")
 
-	database = mongoSession.DB("mgo_examples")
+	database = mongoSession.DB("mgo_examples_06")
 	repo.Collection = database.C("todos")
 
 	// Setup the web server and handlers
@@ -40,11 +40,6 @@ func main() {
 	})
 
 	http.Handle("/", r)
-
-	http.HandleFunc("/index.html", func(w http.ResponseWriter, r *http.Request) {
-		log.Printf("Processing index.html: %v\n", r.RequestURI)
-		http.ServeFile(w, r, "./index.html")
-	})
 
 	go func() {
     log.Printf("Starting webserver http://localhost:8080")
