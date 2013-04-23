@@ -20,7 +20,7 @@ func main() {
 	if mongoSession, err = mgo.Dial("localhost"); err != nil {
 		panic(err)
 	}
-  log.Println("Connected to mongodb")
+	log.Println("Connected to mongodb")
 
 	database = mongoSession.DB("mgo_examples_06")
 	repo.Collection = database.C("todos")
@@ -42,7 +42,7 @@ func main() {
 	http.Handle("/", r)
 
 	go func() {
-    log.Printf("Starting webserver http://localhost:8080")
+		log.Printf("Starting webserver http://localhost:8080")
 		panic(http.ListenAndServe(":8080", nil))
 	}()
 	<-make(chan bool)
