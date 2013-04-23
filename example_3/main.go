@@ -31,7 +31,7 @@ func main() {
 		panic(err)
 	}
 
-	database = mongoSession.DB("mgo_examples")
+	database = mongoSession.DB("mgo_examples_03")
 	collection = database.C("todos")
 
 	var todo = Todo{
