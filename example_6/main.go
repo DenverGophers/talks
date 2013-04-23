@@ -41,10 +41,6 @@ func main() {
 
 	http.Handle("/", r)
 
-	go func() {
-		log.Printf("Starting webserver http://localhost:8080")
-		panic(http.ListenAndServe(":8080", nil))
-	}()
-	<-make(chan bool)
-
+	log.Printf("Starting webserver http://localhost:8080")
+	panic(http.ListenAndServe(":8080", nil))
 }
