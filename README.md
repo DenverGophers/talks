@@ -33,7 +33,7 @@ Examples
   - Bonus: Better example of routing for the webserver
 
 
-About the presenters
+> About the presenters
 --------------------
 
 ### Levi Cook
