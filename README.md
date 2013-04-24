@@ -29,6 +29,9 @@ Examples
   - Reading from MongoDB with mgo via the aggregation framework
 - Example 6
   - Putting it all together with a "todo" project with an ajax front end and json back end
+- Example 7
+  - Bonus: Better example of routing for the webserver
+
 
 About the presenters
 --------------------
