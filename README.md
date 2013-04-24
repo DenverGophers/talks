@@ -42,7 +42,7 @@ From the root of this directory, run the command:
 
 	present
 
-In a browser, go to [http://127.0.0.1:3999/](http://127.0.0.1:3999/) and select the mgo.slide link.
+In a browser, go to [http://127.0.0.1:3999/mgo.slide#1](http://127.0.0.1:3999/mgo.slide#1) and select the mgo.slide link.
 
 > About the presenters
 --------------------
