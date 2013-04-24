@@ -1,0 +1,69 @@
+* mgo Presentation
+
+Levi Cook/Cory LaNou
+
+* This talk will not teach you mongoDB
+
+But there are great resources on it, and they have great documentation.
+
+http://www.mongodb.org
+
+This talk will include:
+
+- An overview of mgo
+- How to put it all together in a simple JSON api
+- Quick overview on gorilla/mux http router
+
+* What is mgo
+
+mgo (pronounced as mango) is a MongoDB driver for the Go language that implements a rich and well tested selection of features under a very simple API following standard Go idioms.
+
+* Example 1 - Connections
+
+.play example_1/main.go
+
+* Example 2 - Structs and Annotations
+
+.play example_2/main.go
+
+* Example 3 - Writing data via the upsert
+
+.play example_3/main.go
+
+* Example 4 - Reading/Writing via find/apply
+
+.play example_4/main.go
+
+* Example 5 - Retrieving data via the aggretation framework
+
+.play example_5/main.go
+
+* Example 6 - Putting it all together
+
+From the example_6 directory, run:
+
+	go run *.go
+
+* Example 6 - main.go
+
+.code example_6/main.go
+
+* Example 6 - handle_todos.go
+
+.code example_6/handle_todos.go
+
+* Example 6 - models.go
+
+.code example_6/models.go
+
+* Example 6 - repos.go
+
+.code example_6/repos.go
+
+* Example 7 - Bonus: Better routing
+
+From the example_6 directory, run:
+
+	go run *.go
+
+
