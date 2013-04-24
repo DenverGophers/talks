@@ -36,11 +36,11 @@ Slideshow
 ----------
 To run the slideshow, download the presentation library from the command line:
 
-  go get code.google.com/p/go.talks/present
+	go get code.google.com/p/go.talks/present
 
 From the root of this directory, run the command:
 
-  present
+	present
 
 In a browser, go to [http://127.0.0.1:3999/](http://127.0.0.1:3999/) and select the mgo.slide link.
 
