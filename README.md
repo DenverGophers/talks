@@ -7,4 +7,4 @@ Click any of the presentations below to view the slide shows.
 
 April 25, 2013
 -------------
-- [Presentation on mgo | Rich MongoDB driver for Go](http://denvergophers.com/2013-04/mgo.slide#1)
+- [Tutorial and examples with mgo | Rich MongoDB driver for Go](http://denvergophers.com/2013-04/mgo.slide#1)
