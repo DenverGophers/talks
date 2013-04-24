@@ -13,7 +13,7 @@ http://www.supportlocal.com
 
 But there are great resources on it, and they have great documentation.
 
-http://www.mongodb.org
+.link http://www.mongodb.org mongodb.org
 
 This talk will include:
 
@@ -21,29 +21,39 @@ This talk will include:
 - How to put it all together in a simple JSON api
 - Quick overview on gorilla/mux http router
 
+* Resources
+
+.link http://www.mongodb.org/ mongoDB.org
+.link http://labix.org/mgo mgo
+.link http://godoc.org/labix.org/v2/mgo/bson mgo/bson
+.link http://godoc.org/labix.org/v2/mgo/bson#Marshal Supported tags for Marshalling bson
+.link http://golang.org/ref/spec#Struct_types go structs reference
+.link http://golang.org/pkg/reflect/#StructField go reflect reference
+.link http://www.gorillatoolkit.org/pkg/mux mux router
+
 * What is mgo
 
 mgo (pronounced as mango) is a MongoDB driver for the Go language that implements a rich and well tested selection of features under a very simple API following standard Go idioms.
 
 * Example 1 - Connections
 
-.play example_1/main.go
+.play example_1/main.go /START OMIT/,/END OMIT/ 
 
 * Example 2 - Structs and Annotations
 
-.play example_2/main.go
+.play example_2/main.go /START OMIT/,/END OMIT/ 
 
 * Example 3 - Writing data via the upsert
 
-.play example_3/main.go
+.play example_3/main.go /START OMIT/,/END OMIT/ 
 
 * Example 4 - Reading/Writing via find/apply
 
-.play example_4/main.go
+.play example_4/main.go /START OMIT/,/END OMIT/ 
 
 * Example 5 - Retrieving data via the aggretation framework
 
-.play example_5/main.go
+.play example_5/main.go /START OMIT/,/END OMIT/ 
 
 * Example 6 - Putting it all together
 
@@ -51,26 +61,81 @@ From the example_6 directory, run:
 
 	go run *.go
 
-* Example 6 - main.go
+* Example 6 - Setting up the routing - main.go
 
-.code example_6/main.go
+.code example_6/main.go /START OMIT/,/END OMIT/ 
 
-* Example 6 - handle_todos.go
+* Example 6 - Retrieving Todos - handle_todos.go
 
-.code example_6/handle_todos.go
+.code example_6/handle_todos.go  /^func handleTodos/,/^}/ 
+
+* Example 6 - Creating Todos - handle_todos.go
+
+.code example_6/handle_todos.go  /^func handleTodoCreate/,/^}/ 
+
+* Example 6 - Updating Todos - handle_todos.go
+
+.code example_6/handle_todos.go  /^func handleTodoUpdate/,/^}/ 
+
+* Example 6 - Destroying Todos - handle_todos.go
+
+.code example_6/handle_todos.go  /^func handleTodoDestroy/,/^}/ 
+
+* Example 6 - Completing Todos - handle_todos.go
+
+.code example_6/handle_todos.go  /^func handleTodoComplete/,/^}/ 
 
 * Example 6 - models.go
 
-.code example_6/models.go
+.code example_6/models.go /START OMIT/,/END OMIT/ 
 
-* Example 6 - repos.go
+* Example 6 - Creating a type for you repo - repos.go
 
-.code example_6/repos.go
+.code example_6/repos.go /^type/,/^\)/ 
+
+* Example 6 - Retieving all todos - repos.go
+
+.code example_6/repos.go  /^func \(r todoRepo\) All/,/^}/ 
+
+* Example 6 - Creating todos - repos.go
+
+.code example_6/repos.go  /^func \(r todoRepo\) Create/,/^}/ 
+
+* Example 6 - Updating todos - repos.go
+
+.code example_6/repos.go  /^func \(r todoRepo\) Update/,/^}/ 
+
+
+* Example 6 - Destroying todos - repos.go
+
+.code example_6/repos.go  /^func \(r todoRepo\) Destroy/,/^}/ 
+
+* Example 6 - Completing todos - repos.go
+
+.code example_6/repos.go  /^func \(r todoRepo\) Complete/,/^}/ 
+
+* Example 6 - Uncompleting todos - repos.go
+
+.code example_6/repos.go  /^func \(r todoRepo\) Uncomplete/,/^}/ 
+
+* Example 6 - Read Json - read_json.go
+
+.code example_6/read_json.go  /^func readJson/,/^}/ 
+
+* Example 6 - Write Json - write_json.go
+
+.code example_6/write_json.go  /^func writeJson/,/^}/ 
 
 * Example 7 - Bonus: Better routing
 
-From the example_6 directory, run:
+From the example_7 directory, run:
 
 	go run *.go
+
+* Example 7 - Better routing - main.go
+
+.code example_7/main.go /START OMIT/,/END OMIT/ 
+.code example_7/main.go /^func route/,/^}/ 
+.code example_7/main.go /^func logRequest/,/^}/ 
 
 

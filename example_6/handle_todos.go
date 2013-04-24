@@ -7,7 +7,6 @@ import (
 )
 
 func handleTodos(w http.ResponseWriter, r *http.Request) {
-	log.Printf("Processing TodoGet: %v\n", r.RequestURI)
 	var (
 		todos Todos
 		err   error
@@ -25,7 +24,6 @@ func handleTodoComplete(w http.ResponseWriter, r *http.Request) {
 		todo Todo
 		err  error
 	)
-	log.Printf("Processing TodoComplete: %v\n", r.RequestURI)
 	data := struct {
 		Success bool `json:"success"`
 		Todo    Todo `json:"todo"`
@@ -49,7 +47,6 @@ func handleTodoUncomplete(w http.ResponseWriter, r *http.Request) {
 		todo Todo
 		err  error
 	)
-	log.Printf("Processing TodoUncomplete: %v\n", r.RequestURI)
 	data := struct {
 		Success bool `json:"success"`
 		Todo    Todo `json:"todo"`
@@ -72,7 +69,6 @@ func handleTodoDestroy(w http.ResponseWriter, r *http.Request) {
 	var (
 		err error
 	)
-	log.Printf("Processing TodoDestroy: %v\n", r.RequestURI)
 	data := struct {
 		Success bool `json:"success"`
 	}{
@@ -94,7 +90,6 @@ func handleTodoCreate(w http.ResponseWriter, r *http.Request) {
 		todo Todo
 		err  error
 	)
-	log.Printf("Processing TodoCreate: %v\n", r.RequestURI)
 	data := struct {
 		Success bool `json:"success"`
 		Todo    Todo `json:"todo"`
@@ -118,7 +113,6 @@ func handleTodoUpdate(w http.ResponseWriter, r *http.Request) {
 		todo Todo
 		err  error
 	)
-	log.Printf("Processing TodoUpdate: %v\n", r.RequestURI)
 	data := struct {
 		Success bool `json:"success"`
 		Todo    Todo `json:"todo"`

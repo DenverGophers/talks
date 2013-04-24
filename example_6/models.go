@@ -5,6 +5,7 @@ import (
 	"time"
 )
 
+// START OMIT
 type (
 	Todos []Todo
 	Todo  struct {
@@ -17,7 +18,9 @@ type (
 	}
 )
 
-/* NOTE: omitempty does not work on an empty time for json...                         
-   Refer to this bug for details: https://code.google.com/p/go/issues/detail?id=4357  
-   Side note... time.Time is a struct...                                              */ 
-
+/* 
+	NOTE: omitempty does not work on an empty time for json...                         
+	Refer to this bug for details: https://code.google.com/p/go/issues/detail?id=4357  
+	Side note... time.Time is a struct...                                              
+*/
+// END OMIT

@@ -28,7 +28,7 @@ func main() {
 	repo.Collection = database.C("todos")
 
 	// Setup the web server and handlers
-
+	// START OMIT
 	route("/todos/{id}/complete", handleTodoComplete)
 	route("/todos/{id}/complete", handleTodoComplete)
 	route("/todos/{id}/uncomplete", handleTodoUncomplete)
@@ -39,6 +39,7 @@ func main() {
 	route("/", func(w http.ResponseWriter, r *http.Request) {
 		http.ServeFile(w, r, "./index.html")
 	})
+	// END OMIT
 
 	http.Handle("/", router)
 

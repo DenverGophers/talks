@@ -25,6 +25,7 @@ func main() {
 	database = mongoSession.DB("mgo_examples_06")
 	repo.Collection = database.C("todos")
 
+	// START OMIT
 	// Setup the web server and handlers
 	r := mux.NewRouter()
 
@@ -40,6 +41,7 @@ func main() {
 	})
 
 	http.Handle("/", r)
+	// END OMIT
 
 	log.Printf("Starting webserver http://localhost:8080")
 	panic(http.ListenAndServe(":8080", nil))

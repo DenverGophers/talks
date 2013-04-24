@@ -48,6 +48,7 @@ func main() {
 	fmt.Printf("Todo: %# v", pretty.Formatter(todo))
 	fmt.Printf("Change Info: %# v", pretty.Formatter(changeInfo))
 
+	// START OMIT
 	var change = mgo.Change{
 		ReturnNew: true,
 		Update: bson.M{
@@ -57,6 +58,7 @@ func main() {
 	if changeInfo, err = collection.FindId(todo.Id).Apply(change, &todo); err != nil {
 		panic(err)
 	}
+	// END OMIT
 
 	fmt.Printf("Todo: %# v", pretty.Formatter(todo))
 	fmt.Printf("Change Info: %# v", pretty.Formatter(changeInfo))

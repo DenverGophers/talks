@@ -50,6 +50,7 @@ func main() {
 			panic(err)
 		}
 	}
+	// START OMIT
 	pipeline := []bson.M{
 		{"$group": bson.M{
 			"_id":   bson.M{"$dayOfYear": "$d"},
@@ -74,5 +75,6 @@ func main() {
 	if err != nil {
 		panic(err)
 	}
+	// END OMIT
 	fmt.Printf("%# v", pretty.Formatter(results))
 }

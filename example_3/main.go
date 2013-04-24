@@ -34,6 +34,7 @@ func main() {
 	database = mongoSession.DB("mgo_examples_03")
 	collection = database.C("todos")
 
+	// START OMIT
 	var todo = Todo{
 		Id:      bson.NewObjectId(),
 		Task:    "Demo mgo",
@@ -44,6 +45,7 @@ func main() {
 	if changeInfo, err = collection.UpsertId(todo.Id, &todo); err != nil {
 		panic(err)
 	}
+	// END OMIT
 
 	fmt.Printf("Todo: %# v", pretty.Formatter(todo))
 	fmt.Printf("Change Info: %# v", pretty.Formatter(changeInfo))
