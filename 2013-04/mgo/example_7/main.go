@@ -5,6 +5,7 @@ import (
 	"labix.org/v2/mgo"
 	"log"
 	"net/http"
+	"time"
 )
 
 var (
@@ -54,7 +55,8 @@ func route(pattern string, handler func(http.ResponseWriter, *http.Request)) *mu
 
 func logRequest(handler func(http.ResponseWriter, *http.Request)) func(http.ResponseWriter, *http.Request) {
 	return func(w http.ResponseWriter, r *http.Request) {
-		log.Printf("%s %s", r.Method, r.RequestURI)
+		var s = time.Now()
 		handler(w, r)
+		log.Printf("%s %s %6.3fms", r.Method, r.RequestURI, (time.Since(s).Seconds()*1000))
 	}
 }
