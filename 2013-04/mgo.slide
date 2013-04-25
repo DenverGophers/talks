@@ -3,11 +3,11 @@ Rich MongoDB driver for Go
 19:15 25 Apr 2013
 Tags: mongoDB mgo
 
-Levi Cook | Cory LaNou
-SupportLocal
-levi@supportlocal.com | cory@supportlocal.com
-http://www.supportlocal.com
-@supportlocal
+Levi Cook
+Cory LaNou
+
+@levicook
+@corylanou
 
 * This talk will not teach you mongoDB
 
@@ -31,6 +31,7 @@ This talk will include:
 .link http://golang.org/ref/spec#Struct_types golang.org/ref/spec#Struct_types
 .link http://golang.org/pkg/reflect/#StructField golang.org/pkg/reflect/#StructField
 .link http://www.gorillatoolkit.org/pkg/mux www.gorillatoolkit.org/pkg/mux | router use for sample project
+.link http://godoc.org/code.google.com/p/go.talks/pkg/present present (what this presentation was created with)
 
 * What is mgo
 
@@ -145,5 +146,8 @@ From the ./mgo/example_7 directory, run:
 .link https://twitter.com/DenverGophers twitter.com/DenverGophers
 .link https://plus.google.com/u/0/communities/104822260820066412402 Google Plus Denver Gophers Group
 
+* Questions?
+
+_or_more_beer_and_pizza?_
 
 
