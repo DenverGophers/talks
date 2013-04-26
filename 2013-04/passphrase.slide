@@ -1,0 +1,217 @@
+Passphrase-Protecting Symmetric Keys
+25 April 2013
+
+Kyle Isom
+Hacker at Large
+https://plus.google.com/107650668295010639306/
+@kyleisom
+http://kyleisom.net
+
+* Introduction
+
+- Monthly series on [[https://leanpub.com/gocrypto/][_Practical_Cryptography_with_Go_]]
+- Looking for code reviewers for the book's example code
+
+*Today*
+- Cryptographic Hashes
+- Key Derivation Functions
+- Practical: Building a passphrase-protected file encryptor
+
+
+* Cryptographic Hashes
+
+* The What and Why
+
+- Generically, a hash is  way to transform some input to a fixed-size output.
+- To be cryptographically secure, it has to be one way and unique.
+- The Secure Hashing Algorithm is the standard crypto hashing library.
+
+*Secure*Hashing*Algorithm* *output*sizes*
+
+.html crypto/passphrase/sha.html
+
+We'll use SHA-512 in this talk.
+
+* Hashing a Byte Slice
+
+.code crypto/passphrase/hash.go 
+
+[[http://play.golang.org/p/lc3Ae5tIgi]]
+
+* Hashing an io.Reader
+
+- All `crypto.Hash` types support `New`, `Write`, and `Sum`.
+- Hash is updated as data is written to it.
+- `Sum(nil)` returns the current hash value.
+
+- Keep reading chunks of data and writing them to the hash value until EOF.
+- Return the `Sum(nil)`
+
+[[http://play.golang.org/p/Vz91kE9Pts]]
+
+* Key Derivation Functions (KDFs)
+
+* What is a KDF?
+
+- Functions that produce secret keys from some value.
+- Input should be secret (i.e. a password).
+- One of the standard KDFs is PBKDF2.
+- Go's crypto library includes a PBKDF2 implementation.
+
+  import "code.google.com/p/go.crypto/pbkdf2"
+
+* Using Go's PBKDF2
+
+* Input to PBKDF2
+
+1. Cryptographic digest function
+- Keyed cryptographic hash; Go uses HMAC combined with the selected hash function.
+2. Password
+3. Salt
+- Random value stored with key to mitigate cracking.
+4. Number of iterations
+- We'll use 16384 iterations.
+5. Secret key length
+- We're using AES-256, so this is 32 bytes.
+
+We'll store key and salt in a structure:
+
+  type PasswordKey struct {
+      Salt []byte
+      Key  []byte
+  }
+
+* Salts
+
+- We store a random value alongside the key.
+- No reason not to store a salt the same length as the digest output.
+- (Unless benchmarks show otherwise!)
+- Same random value generation as we used with the key.
+
+  func generateSalt(chars int) (salt []byte) {
+      salt = make([]byte, chars)
+      nRead, err := io.ReadFull(rand.Reader, salt)
+      return
+  }
+
+* Generating a secret key
+
+  func DeriveKey(password string) *PasswordKey {
+      salt := generateSalt(SaltLength)
+      return DeriveKeyWithSalt(password, salt)
+  }
+  
+  func DeriveKeyWithSalt(password string, salt []byte) (ph *PasswordKey) {
+      key := pbkdf2.Key([]byte(password), salt, IterationCount,
+          KeySize, DefaultAlgo.New)
+      return &PasswordKey{salt, key}
+  }
+
+* Checking a password
+
+  func MatchPassword(password string, pk *PasswordKey) bool {
+      matched := 0
+      new_key := DeriveKeyWithSalt(password, pk.Salt)
+  
+      size := len(new_key.Key)
+      if size > len(pk.Key) {
+          size = len(pk.Key)
+      }
+  
+      for i := 0; i < size; i++ {
+          matched += subtle.ConstantTimeByteEq(new_key.Key[i], pk.Key[i])
+      }
+  
+      passed := matched == size
+      if len(new_key.Key) != len(pk.Key) {
+          return false
+      }
+      return passed
+  }
+
+* Few things to pay attention to
+
+- Fail as late as possible.
+- Deny attacker as much information as possible.
+- `ConstantTimeByteEq` is very important!
+
+* Let's encrypt a file with a passphrase
+
+  func encryptFile(inFile, outFile, passphrase string) (err error) {
+      key := hash.DeriveKey(passphrase)
+      inReader, err := os.Open(inFile)
+      if err != nil {
+          return
+      }
+      defer inReader.Close()
+      
+      outWriter, err := os.Create(outFile)
+      if err != nil {
+          return
+      }
+      defer outWriter.Close()
+      
+      if n, err := outWriter.Write(key.Salt); err != nil {
+          return
+      } else if n != len(key.Salt) {
+          err = ErrWrite
+          return
+      }
+      
+      err = symmetric.EncryptReader(key.Key, inReader, outWriter)
+      return
+  }
+
+* And back again
+
+  func decryptFile(inFile, outFile, passphrase string) (err error) {
+      salt := make([]byte, hash.SaltLength)
+      inReader, err := os.Open(inFile)
+      if err != nil {
+          return
+      }
+      defer inReader.Close()
+  
+      outWriter, err := os.Create(outFile)
+      if err != nil {
+          return
+      }
+      defer outWriter.Close()
+  
+      _, err := io.ReadFull(inReader, salt)
+      if err != nil {
+          return
+      }
+  
+      key := hash.DeriveKeyWithSalt(passphrase, salt)
+      err = symmetric.DecryptReader(key.Key, inReader, outWriter)
+      return
+  }
+
+* Demo time
+
+* Simple File Encryption Webapp
+
+- Not how you want to do it in the real world!
+- Crude
+- No SSL protecting password
+- Suffices to show off encrypting a file
+
+*Getting*the*Demo*Code*
+
+  go get github.com/gokyle/april2013_demo
+
+* Uploaded data
+
+.code crypto/passphrase/demo/server.go /^type Upload/,/^}/
+
+- Data contains uploaded file data
+- Name is the file name to save the file as
+
+* Encrypt
+
+.code crypto/passphrase/demo/crypto.go /^func encrypt/,/^}/
+
+* Decrypt
+
+.code crypto/passphrase/demo/crypto.go /^func decrypt/,/^}/

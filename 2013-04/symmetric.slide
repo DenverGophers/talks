@@ -1,0 +1,316 @@
+Symmetric Cryptography With Go
+28 March 2013
+
+Kyle Isom
+Hacker at Large
+https://plus.google.com/107650668295010639306/
+@kyleisom
+http://kyleisom.net
+
+
+* Brief Plug
+
+- Monthly series on practical cryptography using Go.
+- Based on my in-progress book: [[https://leanpub.com/gocrypto][Practical Cryptography With Go]]
+- Looking for reviewers: if you are interested, see me after the meetup.
+- Code is largely based on the [[https://github.com/kisom/gocrypto/][book's example code]]
+
+* Introduction
+
+- Symmetric cryptography is also known as secret key cryptography.
+- Everyone shares the same key to talk securely.
+- There is a standard cryptosystem used for symmetric crypto: AES-CBC.
+
+*Topics*
+
+- Random Data and Keys
+- Block ciphers
+- AES
+- Padding
+- Combining blocks
+- Overview of file encryption
+- Demo
+
+* Go packages for symmetric crypto
+
+- *crypto/cipher*: contains constructs for using CBC
+- *crypto/aes*: contains constructs for using AES
+- *crypto/rand*: interface to a secure random number generator
+
+* Random Data
+
+- Random data is at the heart of cryptography.
+- _Predictability_is_the_enemy_of_crypto._
+- *math/rand* isn't _cryptographically_secure_.
+
+* Reading Random Data
+
+- Reading `n` bytes of random data:
+
+	package symmetric
+	
+	import (
+	    "crypto/rand"
+	    "fmt"
+	)
+	
+	var ErrRandomFailure = fmt.Errorf("failed to read enough random data")
+	
+	func Random(size int) (b []byte, err error) {
+	        b = make([]byte, size)
+	        size, err := rand.Read(b)
+	        if err != nil {
+	                return
+	        } else if size != n {
+	                err = ErrRandomFailure
+	        }
+	        return
+	}
+
+* Secret Keys
+
+- Symmetric keys just sequences of random data
+- AES128 keys are 128 bits long == 16 bytes
+- Key generation function:
+
+	const KeySize = 16
+
+	func GenerateKey() (key []byte, err error) {
+	        return Random(KeySize)
+	}
+- `rand.Read` uses `/dev/urandom`
+- We can use these for short-term keys, but
+- There are better ways to generate long-term keys.
+
+# If we have time...
+* Long Term Keys
+
+- `/dev/urandom` isn't always guaranteed to be as "random" as `/dev/random`
+
+	import "os"
+
+	func StrongRandom(size int) (b []byte, err error) {
+	        b := make([]byte, size)
+	        devrand, err := os.Open("/dev/random")
+	        if err != nil {
+	                return
+	        }
+	        defer devrand.Close()
+
+	        n, err := devrand.Read(b)
+	        if err != nil {
+	                return
+	        } else if size != n {
+	                err = ErrRandomFailure
+	        }
+	        return
+	}
+
+* Block Ciphers
+
+- Crypto is just transformations of data
+- Block ciphers operate on blocks of data
+- AES is implemented in *crypto/aes*
+- AES is the "standard" block cipher, operates on 16-byte blocks
+- `aes.BlockSize` is predefined as a constant.
+
+* AES in Go
+
+	        c, err := aes.NewCipher(key)
+
+- `aes` selects the appropriate version of AES based on key size.
+- AES by itself isn't very useful
+- We'd have to step through each block and encrypt them separately.
+
+* Blocks and Padding
+
+- We need make sure we're dealing with an exact number of blocks.
+- Blocks that don't contain full data need to be padded.
+- The standard scheme is to use `0x80` as the first byte of padding, followed by `0x00`s.
+- For example, padding "hello world":
+
+	Original message: [72 101 108 108 111 32 119 111 114 108 100]
+	Length: 11 bytes
+	Padded message:   [72 101 108 108 111 32 119 111 114 108 100 128 0 0 0 0]
+	Length: 16 bytes
+
+- We only pad the end of the message out to an even number of blocks.
+- Padding occurs outside of encryption and decryption: pad -> encrypt -> decrypt -> unpad.
+
+* Padding Function
+
+        func PadBuffer(m []byte) (p []byte, err error) {
+                mLen := len(m)
+        
+                p = make([]byte, mLen)
+                copy(p, m)
+        
+                if len(p) != mLen {
+                        return p, ErrPadding
+                }
+        
+                padding := aes.BlockSize - mLen%aes.BlockSize
+        
+                p = append(p, 0x80)
+                for i := 1; i < padding; i++ {
+                        p = append(p, 0x0)
+                }
+                return
+        }
+
+
+* Unpadding
+
+        func UnpadBuffer(p []byte) (m []byte, err error) {
+                m = p
+                var pLen int
+                origLen := len(m)
+        
+                for pLen = origLen - 1; pLen >= 0; pLen-- {
+                        if m[pLen] == 0x80 {
+                                break
+                        }
+        
+                        if m[pLen] != 0x0 || (origLen-pLen) > aes.BlockSize {
+                                err = ErrPadding
+                                return
+                        }
+                }
+                m = m[:pLen]
+                return
+        }
+
+* Block Modes
+
+- Need to combine blocks together
+- Block mode is a way of combining blocks.
+- Can't just append them together (ECB mode)
+
+Plaintext:
+
+.image symmetric/ECB/Tux.jpg 100 100
+
+ECB:
+
+.image symmetric/ECB/Tux_ecb.jpg 100 100
+
+.link www.isc.tamu.edu/~lewing/linux/ Image copyright.
+
+* Block Modes: CBC
+
+- CBC XORs each block with the previous block.
+- First block needs to be a completely randomly generated block.
+- This random first block is called the _initialisation_vector_ (IV).
+- It isn't a secret and can be stored with the encrypted data.
+- Generating an IV:
+
+	import "crypto/aes"
+
+	func GenerateIV() (iv []byte, err error) {
+	        return Random(aes.BlockSize)
+	}
+
+* CBC mode in Go
+
+- *crypto/cipher* contains CBC functions.
+- `cipher.NewCBCEncrypter` is used for encrypting.
+- `cipher.NewCBCDecrypter` is used for decrypting.
+- extending the previous AES version for encryption:
+
+	import "crypto/cipher"
+
+	// inside our encryption function
+	        c, err := aes.NewCipher(key)
+	        if err != nil {
+	                return
+	        }
+	        
+	        iv, err := GenerateIV()
+	        if err != nil {
+	                return
+	        }
+	
+	        cbc := cipher.NewCBCEncrypter(c, iv)
+
+* Assembling the Pieces: Encrypting
+
+- We'll return a byte slice with the IV prepended.
+
+	func Encrypt(key []byte, msg []byte) (ct []byte, err error) {
+		c, err := aes.NewCipher(key)
+		if err != nil {
+			return
+		}
+		iv, err := GenerateIV()
+		if err != nil {
+			return
+		}
+		padded, err := PadBuffer(msg)
+		if err != nil {
+			return
+		}
+		cbc := cipher.NewCBCEncrypter(c, iv)
+		cbc.CryptBlocks(padded, padded) // encrypt in-place
+		ct = iv
+		ct = append(ct, padded...)
+	
+		return
+	}
+
+* Assembling the Pieces: Decrypting
+
+	var ErrInvalidIV = fmt.Errorf("invalid IV")
+
+        func Decrypt(key []byte, ct []byte) (msg []byte, err error) {
+                c, err := aes.NewCipher(key)
+                if err != nil {
+                        return
+                }
+        
+                // Copy the ciphertext to prevent it from being modified.
+                tmp_ct := make([]byte, len(ct))
+                copy(tmp_ct, ct)
+                iv := tmp_ct[:aes.BlockSize]
+                if len(iv) != aes.BlockSize {
+                        return msg, ErrInvalidIV
+                }
+                msg = tmp_ct[aes.BlockSize:]
+        
+                cbc := cipher.NewCBCDecrypter(c, iv)
+                cbc.CryptBlocks(msg, msg)
+                msg, err = UnpadBuffer(msg)
+                return
+        }
+
+
+* Encrypting and Decrypting Files
+
+- Can't guarantee reading the entire file into memory
+- ex. duplicity backups
+- Need to read a block at a time, pad the last block only.
+- Need to modify unpad to ignore unpadded blocks
+- Example code: [[https://raw.github.com/kisom/gocrypto/master/chapter2/symmetric/file.go][file.go]]
+
+* Demo
+
+- Chat system demo
+.link http://github.com/gokyle/marchat
+
+- Install:
+        go get github.com/gokyle/marchat
+
+* Demo Setup
+
+- Need three volunteers:
+
+- With demo key:
+        marchat -u <your name> -key demo
+
+- With wrong key:
+        marchat -u <your name> -key wrong
+
+- With no key:
+        marchat -u <your name>
+
+- Navigate to [[http://localhost:4000]]
+
