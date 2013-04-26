@@ -1,4 +1,4 @@
-mgo Presentation
+Tutorial and examples with mgo 
 Rich MongoDB driver for Go
 19:15 25 Apr 2013
 Tags: mongoDB mgo
@@ -59,86 +59,84 @@ mgo (pronounced as mango) is a MongoDB driver for the Go language that implement
 
 * Example 6 - Putting it all together
 
-From the ./mgo/example_6 directory, run:
+This example puts it all together with a simple web server that has json end points
+with a rich html front end.
 
-	go run *.go
-
-* Example 6 - Setting up the routing - main.go
-
-.code ./mgo/example_6/main.go /START OMIT/,/END OMIT/ 
-
-* Example 6 - Retrieving Todos - handle_todos.go
-
-.code ./mgo/example_6/handle_todos.go  /^func handleTodos/,/^}/ 
-
-* Example 6 - Creating Todos - handle_todos.go
-
-.code ./mgo/example_6/handle_todos.go  /^func handleTodoCreate/,/^}/ 
-
-* Example 6 - Updating Todos - handle_todos.go
-
-.code ./mgo/example_6/handle_todos.go  /^func handleTodoUpdate/,/^}/ 
-
-* Example 6 - Destroying Todos - handle_todos.go
-
-.code ./mgo/example_6/handle_todos.go  /^func handleTodoDestroy/,/^}/ 
-
-* Example 6 - Completing Todos - handle_todos.go
-
-.code ./mgo/example_6/handle_todos.go  /^func handleTodoComplete/,/^}/ 
-
-* Example 6 - models.go
+* The Model
 
 .code ./mgo/example_6/models.go /START OMIT/,/END OMIT/ 
 
-* Example 6 - Creating a type for you repo - repos.go
+* Creating a type for you repo
 
 .code ./mgo/example_6/repos.go /^type/,/^\)/ 
 
-* Example 6 - Retieving all todos - repos.go
+* Retrieving Todos via http handler
+
+.code ./mgo/example_6/http_handlers.go  /^func handleTodos/,/^}/ 
+
+* Retriving Todos via the repo - repo.All()
 
 .code ./mgo/example_6/repos.go  /^func \(r todoRepo\) All/,/^}/ 
 
-* Example 6 - Creating todos - repos.go
+* Creating Todos via the http handler
+
+.code ./mgo/example_6/http_handlers.go  /^func handleTodoCreate/,/^}/ 
+
+* Creating Todos via the repo - repo.Create()
 
 .code ./mgo/example_6/repos.go  /^func \(r todoRepo\) Create/,/^}/ 
 
-* Example 6 - Updating todos - repos.go
+* Updating Todos via the http handler
+
+.code ./mgo/example_6/http_handlers.go  /^func handleTodoUpdate/,/^}/ 
+
+* Updating Todos via the repo - repo.Update()
 
 .code ./mgo/example_6/repos.go  /^func \(r todoRepo\) Update/,/^}/ 
 
+* Destroying Todos via the http handler
 
-* Example 6 - Destroying todos - repos.go
+.code ./mgo/example_6/http_handlers.go  /^func handleTodoDestroy/,/^}/ 
+
+* Destroying Todos via the repo - repo.Destroy()
 
 .code ./mgo/example_6/repos.go  /^func \(r todoRepo\) Destroy/,/^}/ 
 
-* Example 6 - Completing todos - repos.go
+* Completing Todos via the http handler
+
+.code ./mgo/example_6/http_handlers.go  /^func handleTodoComplete/,/^}/ 
+
+* Completing Todos via the repo - repo.Complete()
 
 .code ./mgo/example_6/repos.go  /^func \(r todoRepo\) Complete/,/^}/ 
 
-* Example 6 - Uncompleting todos - repos.go
+* Uncompleting Todos via the http handler
+
+.code ./mgo/example_6/http_handlers.go  /^func handleTodoUncomplete/,/^}/ 
+
+* Uncompleting Todos via the repo - repo.Uncomplete()
 
 .code ./mgo/example_6/repos.go  /^func \(r todoRepo\) Uncomplete/,/^}/ 
 
-* Example 6 - Read Json - read_json.go
+* Read Json
 
 .code ./mgo/example_6/read_json.go  /^func readJson/,/^}/ 
 
-* Example 6 - Write Json - write_json.go
+* Write Json
 
 .code ./mgo/example_6/write_json.go  /^func writeJson/,/^}/ 
 
-* Example 7 - Bonus: Better routing
+* Routing
 
-From the ./mgo/example_7 directory, run:
+.code ./mgo/example_6/main.go /START OMIT/,/END OMIT/ 
+.code ./mgo/example_6/main.go /^func route/,/^}/ 
+.code ./mgo/example_6/main.go /^func logRequest/,/^}/ 
+
+* Running it
+
+From the ./mgo/example_6 directory, run:
 
 	go run *.go
-
-* Example 7 - Better routing - main.go
-
-.code ./mgo/example_7/main.go /START OMIT/,/END OMIT/ 
-.code ./mgo/example_7/main.go /^func route/,/^}/ 
-.code ./mgo/example_7/main.go /^func logRequest/,/^}/ 
 
 * Denver Gophers
 
@@ -147,7 +145,3 @@ From the ./mgo/example_7 directory, run:
 .link https://plus.google.com/u/0/communities/104822260820066412402 Google Plus Denver Gophers Group
 
 * Questions?
-
-_or_more_beer_and_pizza?_
-
-
