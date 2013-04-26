@@ -5,12 +5,15 @@ import (
 	"labix.org/v2/mgo"
 	"log"
 	"net/http"
+	"time"
 )
 
 var (
 	mongoSession *mgo.Session
 	database     *mgo.Database
 	repo         todoRepo
+
+	router = mux.NewRouter()
 )
 
 func main() {
@@ -25,24 +28,35 @@ func main() {
 	database = mongoSession.DB("mgo_examples_06")
 	repo.Collection = database.C("todos")
 
-	// START OMIT
 	// Setup the web server and handlers
-	r := mux.NewRouter()
-
-	r.HandleFunc("/todos/{id}/complete", handleTodoComplete)
-	r.HandleFunc("/todos/{id}/uncomplete", handleTodoUncomplete)
-	r.HandleFunc("/todos/{id}", handleTodoDestroy).Methods("DELETE")
-	r.HandleFunc("/todos/{id}", handleTodoUpdate).Methods("PUT")
-	r.HandleFunc("/todos", handleTodoCreate).Methods("POST")
-	r.HandleFunc("/todos", handleTodos).Methods("GET")
-	r.HandleFunc("/", func(w http.ResponseWriter, r *http.Request) {
-		log.Printf("Processing index.html: %v\n", r.RequestURI)
+	// START OMIT
+	route("/todos/{id}/complete", handleTodoComplete)
+	route("/todos/{id}/complete", handleTodoComplete)
+	route("/todos/{id}/uncomplete", handleTodoUncomplete)
+	route("/todos/{id}", handleTodoDestroy).Methods("DELETE")
+	route("/todos/{id}", handleTodoUpdate).Methods("PUT")
+	route("/todos", handleTodoCreate).Methods("POST")
+	route("/todos", handleTodos).Methods("GET")
+	route("/", func(w http.ResponseWriter, r *http.Request) {
 		http.ServeFile(w, r, "./index.html")
 	})
-
-	http.Handle("/", r)
 	// END OMIT
+
+	http.Handle("/", router)
 
 	log.Printf("Starting webserver http://localhost:8080")
 	panic(http.ListenAndServe(":8080", nil))
+}
+
+func route(pattern string, handler func(http.ResponseWriter, *http.Request)) *mux.Route {
+	handler = logRequest(handler)
+	return router.HandleFunc(pattern, handler)
+}
+
+func logRequest(handler func(http.ResponseWriter, *http.Request)) func(http.ResponseWriter, *http.Request) {
+	return func(w http.ResponseWriter, r *http.Request) {
+		var s = time.Now()
+		handler(w, r)
+		log.Printf("%s %s %6.3fms", r.Method, r.RequestURI, (time.Since(s).Seconds()*1000))
+	}
 }
