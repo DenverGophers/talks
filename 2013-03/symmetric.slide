@@ -90,13 +90,13 @@ http://kyleisom.net
 	import "os"
 
 	func StrongRandom(size int) (b []byte, err error) {
-	        b := make([]byte, size)
 	        devrand, err := os.Open("/dev/random")
 	        if err != nil {
 	                return
 	        }
 	        defer devrand.Close()
 
+	        b = make([]byte, size)
 	        n, err := devrand.Read(b)
 	        if err != nil {
 	                return
