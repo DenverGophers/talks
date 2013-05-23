@@ -1,0 +1,6 @@
+#!/bin/bash
+
+RUN_DIR="$(cd "$( dirname "$0" )" && pwd )"
+which present || go get code.google.com/p/go.talks/present
+cd $RUN_DIR
+present
