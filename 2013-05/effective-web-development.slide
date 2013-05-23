@@ -1,4 +1,5 @@
 Effective Web Development with Go
+Part 1 of ?
 
 23 May 2013
 Tags: go golang
@@ -9,4 +10,103 @@ Cory LaNou
 @levicook
 @corylanou
 
-* Effective Web Development with Go
+
+* Go has an incomplete story for web developers.
+
+- Source of many questions and partial answers (read: confusion)
+- Community isn't focusing *direct* effort and attention here, but they've provided some awesome starting points.
+
+I'm here to demonstrate the approach we've taken.
+
+- We use it daily
+- We don't completely hate it
+- It's an incomplete story too, but fills some blanks we consider vital.
+
+*Warning*: I'm going to talk way too much at the beginning of this presentation.
+I havn't balanced telling and showing yet. There will be plenty of showing
+and demonstration eventually. Thanks for being my Guinea pigs :)
+
+
+* Review of typical community questions and answers
+
+- Can the go programming language be used for web apps?
+- What framework to use while developing in Go?
+- Is there a well established web framework for Go?
+
+Typical answers: Definitely,
+
+- just use Revel, beego, Goo, etc.
+- just use my (Rails|Django|.*) clone!
+- (and my favorite) *you* *don't* *need* *a* *framework*. *Just* …
+
+Let's unpack that last ellipsis
+
+
+* No Framework!! You can't be serious.
+
+I am. At least partially, depending on your perspective. Here's mine:
+
+- Frameworks are an aggregate of libraries playing nicely together.
+- Many go packages (libraries) implement common framework features.
+- Go is pretty strict, so libraries tend to play well with one another by default.
+
+The problem we're left with is discovering, assembling and testing these libraries.
+
+
+* Discovering, assembling and testing libraries
+
+- Google search, groups and the +Go community make the first step relatively easy.
+- Absolutely lean on this group if you're hunting for something
+- Assembling and testing is hard, unless you create an environment that makes trying new things easier.
+
+Our environment makes a lot of experimentation easier, and more informed, by automating common tasks.
+
+* Some notes on automation
+
+Opinion:
+
+- Rely on proven tools - don't reinvent the wheel, just because you love go
+- We love go and fight the temptation to build an "all go all the time" toolset.
+- Proven tools are tools you know and/or find easy to use and explain
+- If you have a large number of WTF's per hour, your using the wrong tool
+- You might have a different set of tools, we use ruby because it's easy for us.
+- Use what's easy for you and your team, use our automation as a benchmark and tell us where we fall short.
+- We'll build that "all go all the time" toolset someday, and use this approach as the inspiration.
+
+
+* Our basic development environment
+- Guard - does stuff when files change
+- Rake - manages our build and packaging process
+- Compass - based on SASS, the only way to CSS
+- Bundler - the best way to manage our ruby environment
+
+*A* *quick* *note* *on* *production* *dependencies*
+
+- None of this stuff ever makes it into production.
+- We only deploy binaries and static assets.
+
+
+* Core Development Tasks
+
+Things you *have* *to* *do*:
+- Edit - go, html, css, js
+- Build - go, scss, js
+- Run - your application
+- Reload - your browsers (potentially several of them)
+- View - did it work? (no substitute for our eyeballs)
+
+Things you *should* *do*:
+- Test - go, js (go test, karma)
+- Lint - go, js (go vet, jslint)
+
+
+* What can be automated? (last slide, demo time!)
+- Build - go, scss, js
+- Lint - go, js (go vet, jslint)
+- Reload - your browsers (potentially several of them)
+- Run - your application
+- Test - go, js (go test, karma)
+- View - did it work? (no substitute for our eyeballs)
+
+
+* Questions?
