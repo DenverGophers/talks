@@ -8,7 +8,7 @@ import (
 func main() {
 
 	http.HandleFunc("/", func(w http.ResponseWriter, req *http.Request) {
-		io.WriteString(w, "hello, world!\n")
+		io.WriteString(w, "hello\n")
 	})
 
 	if err := http.ListenAndServe(":4000", nil); err != nil {
