@@ -90,7 +90,7 @@ Opinion:
 Things you *have* *to* *do*:
 - Edit   - go, html, css, js
 - Build  - go, scss, js
-- Run    - your application
+- Run    - start and restart your application
 - Reload - your browsers (potentially several of them)
 - View   - did it work? (no substitute for our eyeballs)
 
@@ -103,7 +103,7 @@ Things you *should* *do*:
 - Build  - go, scss, js
 - Lint   - go, js (go vet, jslint)
 - Reload - your browsers (potentially several of them)
-- Run    - your application
+- Run    - start and restart your application
 - Test   - go, js (go test, karma)
 - View   - did it work? (no substitute for our eyeballs)
 
