@@ -1,6 +1,6 @@
 # vi: set ft=ruby :
 
-guard 'shell' do
+guard :shell do
 
   # anytime a go file changes ...
   watch(%r{.*\.go$}) do

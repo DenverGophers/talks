@@ -1,10 +1,10 @@
 # vi: set ft=ruby :
 
-guard :process, name: 'goonies', command: "./goonies" do
-  watch(%r{^goonies$})
+guard :process, name: 'goonies', command: './goonies' do
+  watch %r{^goonies$}
 end
 
-guard 'shell' do
+guard :shell do
 
   # anytime a go file changes ...
   watch(%r{.*\.go$}) do
