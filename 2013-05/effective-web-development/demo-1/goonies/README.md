@@ -1,7 +1,7 @@
 
 # Demo 1
 
-## Automate build, test and lint/vet for go files using Guard.
+## Automate build, test and lint/vet for go files using guard-shell.
 
 Configure our Gemfile (bundler)
 	Add "gem 'guard-shell'" to Gemfile
