@@ -23,8 +23,7 @@ I'm here to demonstrate the approach we've taken.
 - It's an incomplete story too, but fills some blanks we consider vital.
 
 *Warning*: I'm going to talk way too much at the beginning of this presentation.
-I havn't balanced telling and showing yet. There will be plenty of showing
-and demonstration eventually. Thanks for being my Guinea pigs :)
+I havn't balanced telling and showing yet. Thanks for being my Guinea pigs :)
 
 
 * Review of typical community questions and answers
@@ -89,11 +88,11 @@ Opinion:
 * Core Development Tasks
 
 Things you *have* *to* *do*:
-- Edit - go, html, css, js
-- Build - go, scss, js
-- Run - your application
+- Edit   - go, html, css, js
+- Build  - go, scss, js
+- Run    - your application
 - Reload - your browsers (potentially several of them)
-- View - did it work? (no substitute for our eyeballs)
+- View   - did it work? (no substitute for our eyeballs)
 
 Things you *should* *do*:
 - Test - go, js (go test, karma)
@@ -101,12 +100,12 @@ Things you *should* *do*:
 
 
 * What can be automated? (last slide, demo time!)
-- Build - go, scss, js
-- Lint - go, js (go vet, jslint)
+- Build  - go, scss, js
+- Lint   - go, js (go vet, jslint)
 - Reload - your browsers (potentially several of them)
-- Run - your application
-- Test - go, js (go test, karma)
-- View - did it work? (no substitute for our eyeballs)
+- Run    - your application
+- Test   - go, js (go test, karma)
+- View   - did it work? (no substitute for our eyeballs)
 
 
 * Questions?

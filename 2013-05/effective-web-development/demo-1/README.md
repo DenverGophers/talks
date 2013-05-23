@@ -7,6 +7,6 @@ Configure our Gemfile
 Configure our Guardfile
 	watch go files and react
 
-Start guard
+Run guard
 
 Edit go files and watch our console for complaints
