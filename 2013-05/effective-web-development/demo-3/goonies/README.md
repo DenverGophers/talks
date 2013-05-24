@@ -1,7 +1,7 @@
 
 # Demo 3
 
-## Automate build for scss files using guard-shell and compass.
+## Automate build for scss files using guard-process and compass watch.
 
 Configure our Gemfile (bundler)
 	Add "gem 'compass'" to Gemfile
@@ -12,8 +12,11 @@ Configure our Guardfile (gaurd)
 	run `guard --no-interactions`
 
 Create a directory structure to
-	house our scss sources - assets/scss
+	house our scss sources - assets/sass
 	serve our compiled css - assets/css (and update our .gitignore)
+
+Initialize our compass configuration
+	run `compass create ./assets`
 
 Update our application
 	serve our css file

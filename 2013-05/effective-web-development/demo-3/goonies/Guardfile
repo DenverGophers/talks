@@ -4,12 +4,9 @@ guard :process, name: 'goonies', command: './goonies' do
   watch %r{^goonies$}
 end
 
-guard :shell do
+guard :process, name: 'compass', command: 'compass watch --config assets/config.rb --quiet --boring'
 
-  # anytime a scss file changes ...
-  watch(%r{.*\.scss$}) do
-    system("compass watch --sass-dir=assets/sass --css-dir=assets/css --quiet --boring")
-  end
+guard :shell do
 
   # anytime a go file changes ...
   watch(%r{.*\.go$}) do
