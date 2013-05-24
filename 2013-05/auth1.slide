@@ -1,0 +1,98 @@
+Symmetric Crypto the Right Way
+23 May 2013
+
+Kyle Isom
+Hacker at Large
+@kyleisom
+kyle@gokyle.org
+
+* Introduction
+
+- Monthly series on [[https://leanpub.com/gocrypto/][_Practical_Cryptography_with_Go_]]
+
+*Today*
+
+- Chapter 5: "Authentication, Part I"
+- Introduction to Authentication
+- Symmetric Crypto + MAC + HMAC
+- Message Authentication Codes
+
+* Symmetric Cryptography
+
+- Confidentiality is only part of the story.
+- We also want *integrity* and *authentication*.
+- Recall that cryptographic hashes provide integrity.
+- Did the message really come from the person it was purported to come from?
+
+* Authentication 
+
+- Proving the identity of some component.
+- Entity authentication: proving identity of an authentication.
+- Message authentication: proving the identity of a message's source.
+- Shared keys (i.e. with symmetric cryptography) makes authentication a challenge.
+
+* Challenge-Response Authentication
+
+- Client needs to send a secret to a server to prove its identity.
+- Don't want the secret being sent to the world.
+- Server sends a challenge (random value).
+- Client appends challenge to secret and hashes it, sends to server.
+- Server checks this response and proceeds appropriately.
+
+* Keyed Cryptographic Hashes
+
+- The hashes we've considered so far are "unauthenticated."
+- Keyed cryptographic hashes: integrity benefits of hash, but use key.
+- Requires both key and original input to verify.
+
+* Message Authentication Codes
+
+- It is a *catastrophic*failure* of a cryptosystem when a message is repeated.
+- Message Authentication Codes (MAC) prevent repeated messages.
+- A MAC can be as simple as a counter that increments for each message.
+- Receiver should check to make sure message numbers aren't repeated.
+
+* HMAC
+
+- Keyed cryptographic hash: uses a symmetric key + a hashing algorithm.
+- We'll use HMAC-SHA256, which is used pretty much just like a digest:
+
+    h := hmac.New(sha512.New, key)
+    h.Write([]byte("Hello, world."))
+    fmt.Printf("'Hello, world.' -> %x\n", h.Sum(nil))
+
+.link http://play.golang.org/p/CLdrPbUr1c
+
+- Compute the HMAC of the *ciphertext*
+- Append this to the end of the ciphertext, and validate it as part of the decryption.
+
+* Demo
+
+- Based on marchat
+- Does encryption right (even does HMAC), but doesn't verify message numbers.
+- We can spoof messages!
+- Demo is on Github: [[https://github.com/gokyle/maychat]]
+- Three components:
+1. Chat program.
+2. Sniffer -- listens for traffic, stores messages in database.
+3. Spoofer -- retransmits stored messages.
+
+  go get github.com/gokyle/maychat
+
+- Imagine this as a point-of-sale (POS) system and a central server.
+- Retransmit 'credit' messages to steal money.
+- Retransmit 'debit' messages to harass someone.
+
+* Demo: Replay Attack
+
+- node 1: "terminal"
+- node 2: "server"
+- node 1 sends "credit account 1234 $100"
+- sniffer picks this up, and it can be replayed, "crediting" account 1234
+
+* Conclusion
+
+- Don't repeat messages.
+- Keep track of messages with a message counter.
+- Confidentiality is not a reliable method for authentication.
+- Confidentiality doesn't provide trust.
