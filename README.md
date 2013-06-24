@@ -7,9 +7,9 @@ Click any of the presentations below to view the slide shows.
 
 May 23, 2013
 ---------------
-[Go and Cryptography - Part 3: Presentation](http://denvergophers.com/2013-05/auth1.slide).
-[Concurrency Metrics with Java Fork/Join, Akka Actors, and Goroutines](http://denvergophers.com/concurrency-metrics/concurrency-metrics.v0.1.slides.pdf)
-[Go, Can.js and JSON: Presentation](http://denvergophers.com/2013-05/efforts-web-development.slide).
+- [Go and Cryptography - Part 3: Presentation](http://denvergophers.com/2013-05/auth1.slide).
+- [Concurrency Metrics with Java Fork/Join, Akka Actors, and Goroutines](http://denvergophers.com/concurrency-metrics/concurrency-metrics.v0.1.slides.pdf)
+- [Go, Can.js and JSON: Presentation](http://denvergophers.com/2013-05/efforts-web-development.slide).
 
 
 April 25, 2013
@@ -41,7 +41,7 @@ Agenda
 1. 6:30 - Meet and Greet. Drink some beer and eat some pizza compliments of [bwbacon group](http://www.bwbacon.com/ "bwbacon.com").
 2. 7:00 - 7:15 - Go and Cryptography - Part 4: Presentation by [Kyle Isom](http://www.github.com/gokyle).
 3. 7:15 - 7:30 - UPDATED: Concurrency Metrics with Java Fork/Join, Akka Actors, and Goroutines by Dean W. Schulze
-4
+
 Past Agenda's
 ================
 
