@@ -5,6 +5,11 @@ This is a list of slide presentations that we have had at the [Denver Gopher](ht
 
 Click any of the presentations below to view the slide shows.
 
+June 24, 2013
+---------------
+- [Public Key Cryptography](http://talks.gokyle.org/denver.gophers/2013/pkc.slide#1)
+
+
 May 23, 2013
 ---------------
 - [Go and Cryptography - Part 3: Presentation](http://denvergophers.com/2013-05/auth1.slide).
@@ -26,6 +31,26 @@ March 28, 2013
 Next Meetup Agenda
 =================
 
+2013.07.25 - Denver Gopher Meetup
+==========
+
+Location
+---------
+Galvanize/Gather: [1062 Delaware Street, Denver CO 80204](http://goo.gl/TqlYe) - ViaWest Cloud Conference Room East.  
+Just walk through Gather (the restaruant) and we are in the second conference room on the left.  
+There will be a sign outside the door promoting our meetup.
+
+Agenda
+--------
+
+1. 6:30 - Meet and Greet. Drink some beer and eat some pizza compliments of [bwbacon group](http://www.bwbacon.com/ "bwbacon.com").
+2. 7:00 - 7:15 - Go and Cryptography - Part 5: Presentation by [Kyle Isom](http://www.github.com/gokyle).
+3. 7:15 - 7:30 - Go Testing Frameworks - [Stephan Hagemann](http://github.com/shageman)
+
+
+Past Agenda's
+================
+
 2013.06.24 - Denver Gopher Meetup
 ==========
 
@@ -41,9 +66,6 @@ Agenda
 1. 6:30 - Meet and Greet. Drink some beer and eat some pizza compliments of [bwbacon group](http://www.bwbacon.com/ "bwbacon.com").
 2. 7:00 - 7:15 - Go and Cryptography - Part 4: Presentation by [Kyle Isom](http://www.github.com/gokyle).
 3. 7:15 - 7:30 - UPDATED: Concurrency Metrics with Java Fork/Join, Akka Actors, and Goroutines by Dean W. Schulze
-
-Past Agenda's
-================
 
 
 2013.05.23 - Denver Gopher Meetup
