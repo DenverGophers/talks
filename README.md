@@ -1,5 +1,25 @@
-Denver Gopher Talks
-===================
+Next Meetup Agenda
+=================
+
+2013.07.25 - Denver Gopher Meetup
+==========
+
+Location
+---------
+Galvanize/Gather: [1062 Delaware Street, Denver CO 80204](http://goo.gl/TqlYe) - ViaWest Cloud Conference Room East.  
+Just walk through Gather (the restaruant) and we are in the second conference room on the left.  
+There will be a sign outside the door promoting our meetup.
+
+Agenda
+--------
+
+1. 6:30 - Meet and Greet. Drink some beer and eat some pizza compliments of [bwbacon group](http://www.bwbacon.com/ "bwbacon.com").
+2. 7:00 - 7:15 - Go and Cryptography - Part 5: Presentation by [Kyle Isom](http://www.github.com/gokyle).
+3. 7:15 - 7:30 - Go Testing Frameworks - [Stephan Hagemann](http://github.com/shageman)
+
+
+Talks
+================
 
 This is a list of slide presentations that we have had at the [Denver Gopher](http://www.meetup.com/Denver-Go-Language-User-Group/) meetups.
 
@@ -26,26 +46,6 @@ April 25, 2013
 March 28, 2013
 --------------
 - [Tutorial and examples on symmetric cryptography with go](http://denvergophers.com/2013-03/symmetric.slide#1)
-
-
-Next Meetup Agenda
-=================
-
-2013.07.25 - Denver Gopher Meetup
-==========
-
-Location
----------
-Galvanize/Gather: [1062 Delaware Street, Denver CO 80204](http://goo.gl/TqlYe) - ViaWest Cloud Conference Room East.  
-Just walk through Gather (the restaruant) and we are in the second conference room on the left.  
-There will be a sign outside the door promoting our meetup.
-
-Agenda
---------
-
-1. 6:30 - Meet and Greet. Drink some beer and eat some pizza compliments of [bwbacon group](http://www.bwbacon.com/ "bwbacon.com").
-2. 7:00 - 7:15 - Go and Cryptography - Part 5: Presentation by [Kyle Isom](http://www.github.com/gokyle).
-3. 7:15 - 7:30 - Go Testing Frameworks - [Stephan Hagemann](http://github.com/shageman)
 
 
 Past Agenda's
