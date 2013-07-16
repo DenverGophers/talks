@@ -1,7 +1,4 @@
-Next Meetup Agenda
-=================
-
-2013.07.25 - Denver Gopher Meetup
+2013.07.25 - Next Gopher Meetup
 ==========
 
 Location
