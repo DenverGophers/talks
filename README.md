@@ -10,7 +10,7 @@ There will be a sign outside the door promoting our meetup.
 Agenda
 --------
 
-1. 6:30 - Meet and Greet. Drink some beer and eat some pizza compliments of [bwbacon group](http://www.bwbacon.com/ "bwbacon.com").
+1. 6:30 - Meet and Greet. Drink some beer and eat some pizza compliments of [Creative Alignments](http://www.creativealignments.com/ "creativealignments.com").
 2. 7:00 - 7:15 - Go and Cryptography - Part 5: Presentation by [Kyle Isom](http://www.github.com/gokyle).
 3. 7:15 - 7:30 - Go Testing Frameworks - [Stephan Hagemann](http://github.com/shageman)
 
