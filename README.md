@@ -1,4 +1,4 @@
-2013.08.22 - Next Gopher Meetup
+Next Meetup - 2013.08.22
 ==========
 
 Location
@@ -25,7 +25,6 @@ Click any of the presentations below to view the slide shows or pdf.
 
 July 25, 2013
 --------------
-
 - [Elliptic Curve Cryptography](http://talks.gokyle.org/denver.gophers/2013/elliptic.slide#1) by [Kyle Isom](http://www.github.com/gokyle)
 - [Comparison of go lang testing libraries](https://github.com/shageman/gotestit/blob/master/20130725denverGophersPresentation.pdf?raw=true) by [Stephan Hagemann](http://www.github.com/shageman)
 - [Go Templates](http://denvergophers.com/2013-07/template.slide) by [Kevin Gillette](https://github.com/extemporalgenome)
@@ -56,16 +55,14 @@ March 28, 2013
 Past Agenda's
 ================
 
-2013.06.24 - Denver Gopher Meetup
-==========
+2013.07.25
+------------
 
-Location
----------
-Galvanize/Gather: [1062 Delaware Street, Denver CO 80204](http://goo.gl/TqlYe) - ViaWest Cloud Conference Room East.  
-Just walk through Gather (the restaruant) and we are in the second conference room on the left.  
-There will be a sign outside the door promoting our meetup.
+1. 6:30 - Meet and Greet. Drink some beer and eat some pizza compliments of [Creative Alignments](http://www.creativealignments.com/ "creativealignments.com").
+2. 7:00 - 7:15 - Go and Cryptography - Part 5: Presentation by [Kyle Isom](http://www.github.com/gokyle).
+3. 7:15 - 7:30 - Go Testing Frameworks - [Stephan Hagemann](http://github.com/shageman)
 
-Agenda
+2013.06.24
 --------
 
 1. 6:30 - Meet and Greet. Drink some beer and eat some pizza compliments of [bwbacon group](http://www.bwbacon.com/ "bwbacon.com").
@@ -73,16 +70,7 @@ Agenda
 3. 7:15 - 7:30 - UPDATED: Concurrency Metrics with Java Fork/Join, Akka Actors, and Goroutines by Dean W. Schulze
 
 
-2013.05.23 - Denver Gopher Meetup
-==========
-
-Location
----------
-Galvanize/Gather: [1062 Delaware Street, Denver CO 80204](http://goo.gl/TqlYe) - ViaWest Cloud Conference Room East.  
-Just walk through Gather (the restaruant) and we are in the second conference room on the left.  
-There will be a sign outside the door promoting our meetup.
-
-Agenda
+2013.05.23
 --------
 
 1. 6:30 - Meet and Greet. Drink some beer and eat some pizza compliments of [bwbacon group](http://www.bwbacon.com/ "bwbacon.com").
@@ -91,16 +79,7 @@ Agenda
 4. 7:30 - 8:00 - Go, Can.js and JSON: Presentation by [Levi Cook](http://www.github.com/levicook).
 5. 7:15 - 9:00 - Round Table / Pair Programming / Question and Answer
 
-2013.04.25 - Denver Gopher Meetup
-==========
-
-Location
----------
-Galvanize/Gather: [1062 Delaware Street, Denver CO 80204](http://goo.gl/TqlYe) - ViaWest Cloud Conference Room East.  
-Just walk through Gather (the restaruant) and we are in the second conference room on the left.  
-There will be a sign outside the door promoting our meetup.
-
-Agenda
+2013.04.25
 --------
 
 1. 6:30 - Meet and Greet. Drink some beer and eat some pizza compliments of [bwbacon group](http://www.bwbacon.com/ "bwbacon.com").
@@ -109,16 +88,7 @@ Agenda
 4. 7:15 - 8:00 - Round Table / Pair Programming: We have a couple of topics that might be interesting to get people started on tonight.  We'll discuss them, then decide where to dive in.  If you have a specific topic/interest, let us know, and we can focus on that as well.
 5. 8:00 - 9:00 - Question and Answer session.
 
-2013.03.28 - Denver Gopher Meetup
-==========
-
-Location
----------
-Galvanize/Gather: [1062 Delaware Street, Denver CO 80204](http://goo.gl/TqlYe) - ViaWest Cloud Conference Room East.  
-Just walk through Gather (the restaruant) and we are in the second conference room on the left.  
-There will be a sign outside the door promoting our meetup.
-
-Agenda
+2013.03.28
 --------
 
 1. 6:30 - Meet and Greet. Drink some beer and eat some pizza compliments of bwbacon group.
@@ -127,21 +97,7 @@ Agenda
 4. 8:00 - 9:00 - Question and Answer session.
 
 
-Kyles Presentation
------------------
-* [slides](http://talks.gokyle.org/denver.gophers/March28.slide)
-* [marchat](https://github.com/gokyle/marchat) - chat program demo
-
-2013.02.28 - Denver Gopher Meetup
-==============
-
-Location
----------
-Galvanize/Gather: [1062 Delaware Street, Denver CO 80204](http://goo.gl/TqlYe) - ViaWest Cloud Conference Room East.  
-Just walk through Gather (the restaruant) and we are in the second conference room on the left.  
-There will be a sign outside the door promoting our meetup.
-
-Agenda
+2013.02.28
 --------
 
 1. 6:30 - Meet and Greet. Drink some beer and eat some pizza compliments of bwbacon group.
