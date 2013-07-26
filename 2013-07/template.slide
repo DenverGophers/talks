@@ -1,0 +1,34 @@
+Efficient {text,html}/template Composition
+25 Jul 2013
+
+Kevin Gillette
+https://github.com/extemporalgenome
+https://github.com/xtgo
+
+* Introduction
+
+- `text/template` and `html/template` both have non-obvious methods for efficiently reusing `*Template` structures between similar documents.
+- This does not require any additional output buffering, which would have generally increased the amount of garbage flowing through the system (unless the code were racey and used a global buffer, or used a buffer pool).
+- Central to this process is the `Clone` method, which copies the template namespace but not the parsed structure.
+- Only needs to be applied at initialization time, unless template composition is truly runtime-dynamic (which this is also suitable for).
+- You may (but do not have to) leverage the ability to replace empty templates so that missing templates will produce blank (sub)output rather than failing.
+
+* A word on structure and equivalency
+
+- The `*Template` type is type-self-referential: each Template contains a main template (used by `Execute`), and a namespace (used by `ExecuteTemplate` and `{{template}}` directives). Each call to the New function/methods resets the default template.
+- Semantically, Templates contain Templates, and every Template (indirectly) contains itself.
+- Another perspective: Templates are simultaneously containers and items within that container.
+
+- `{{define "name"}}content{{end}}` is equivalent to `New("name").Parse(``content``)`
+
+* Example
+
+.code template.go /one OMIT/,/two OMIT/
+
+* Example (cont.)
+
+.code template.go /two OMIT/,/three OMIT/
+
+* Example (cont.)
+
+.play template.go /three OMIT/,$
