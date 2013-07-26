@@ -1,4 +1,4 @@
-2013.07.25 - Next Gopher Meetup
+2013.08.22 - Next Gopher Meetup
 ==========
 
 Location
@@ -7,12 +7,12 @@ Galvanize/Gather: [1062 Delaware Street, Denver CO 80204](http://goo.gl/TqlYe) -
 Just walk through Gather (the restaruant) and we are in the second conference room on the left.  
 There will be a sign outside the door promoting our meetup.
 
-Agenda
+August Agenda
 --------
 
 1. 6:30 - Meet and Greet. Drink some beer and eat some pizza compliments of [Creative Alignments](http://www.creativealignments.com/ "creativealignments.com").
-2. 7:00 - 7:15 - Go and Cryptography - Part 5: Presentation by [Kyle Isom](http://www.github.com/gokyle).
-3. 7:15 - 7:30 - Go Testing Frameworks - [Stephan Hagemann](http://github.com/shageman)
+2. 7:00 - 7:15 - Go and Cryptography - Part 6: Presentation by [Kyle Isom](http://www.github.com/gokyle).
+3. 7:15 - 7:30 - TBD
 
 
 Talks
@@ -20,7 +20,15 @@ Talks
 
 This is a list of slide presentations that we have had at the [Denver Gopher](http://www.meetup.com/Denver-Go-Language-User-Group/) meetups.
 
-Click any of the presentations below to view the slide shows.
+Click any of the presentations below to view the slide shows or pdf.
+
+
+July 25, 2013
+--------------
+
+- [Elliptic Curve Cryptography](http://talks.gokyle.org/denver.gophers/2013/elliptic.slide#1) by [Kyle Isom](http://www.github.com/gokyle)
+- [Comparison of go lang testing libraries](https://github.com/shageman/gotestit/blob/master/20130725denverGophersPresentation.pdf?raw=true) by [Stephan Hagemann](http://www.github.com/shageman)
+- [Go Templates](http://denvergophers.com/2013-07/template.slide) by [Kevin Gillette](https://github.com/extemporalgenome)
 
 June 24, 2013
 ---------------
