@@ -37,6 +37,9 @@ func main() {
 	route("/todos/{id}", handleTodoUpdate).Methods("PUT")
 	route("/todos", handleTodoCreate).Methods("POST")
 	route("/todos", handleTodos).Methods("GET")
+	route("/timeago.js", func(w http.ResponseWriter, r *http.Request) {
+		http.ServeFile(w, r, "./timeago.js")
+	})
 	route("/", func(w http.ResponseWriter, r *http.Request) {
 		http.ServeFile(w, r, "./index.html")
 	})
