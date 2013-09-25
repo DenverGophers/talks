@@ -1,4 +1,4 @@
-Next Meetup - 2013.08.22
+Next Meetup - 2013.09.25
 ==========
 
 Location
@@ -7,12 +7,13 @@ Galvanize/Gather: [1062 Delaware Street, Denver CO 80204](http://goo.gl/TqlYe) -
 Just walk through Gather (the restaruant) and we are in the second conference room on the left.  
 There will be a sign outside the door promoting our meetup.
 
-August Agenda
+September Agenda
 --------
 
 1. 6:30 - Meet and Greet. Drink some beer and eat some pizza compliments of [Creative Alignments](http://www.creativealignments.com/ "creativealignments.com").
-2. 7:00 - 7:15 - Go and Cryptography - Part 6: Presentation by [Kyle Isom](http://www.github.com/gokyle).
-3. 7:15 - 7:30 - TBD
+2. 7:00 - 7:15 - [Glitch](https://github.com/levicook/glitch): Presentation by [Levi Cook](http://www.github.com/levicook).
+2. 7:15 - 7:30 - [Go Tips and Tricks](http://denvergophers.com/2013-09/tips-and-tricks.slide#1): Presentation by [Cory LaNou](http://www.github.com/corylanou).
+3. 7:30 - 9:00 - Round table discussions, questions, pair programming
 
 
 Talks
@@ -21,6 +22,11 @@ Talks
 This is a list of slide presentations that we have had at the [Denver Gopher](http://www.meetup.com/Denver-Go-Language-User-Group/) meetups.
 
 Click any of the presentations below to view the slide shows or pdf.
+
+August 22, 2013
+--------------
+- [Cryptobox: A Crypto API](http://talks.gokyle.org/denver.gophers/2013/cryptobox.slide#1) by [Kyle Isom](http://www.github.com/gokyle)
+
 
 
 July 25, 2013
