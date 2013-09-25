@@ -1,0 +1,83 @@
+Tips and Tricks with Go 
+19:15 25 Sep 2013
+Tags: go
+
+Levi Cook
+Cory LaNou
+
+@levicook
+@corylanou
+
+* This talk will not teach you Go
+
+But there are great resources on it, and they have great documentation.
+
+.link http://golang.org golang.org
+
+This talk will include:
+
+- formatting tips
+- error handling tips
+- consistent function returns
+
+* Code Resources
+
+.link https://denvergophers.com/tips-and-tricks denvergophers.com/tips-and-tricks | (This Presentation and source)
+.link http://golang.org/pkg/fmt golang.org/pkg/fmt
+.link http://godoc.org/code.google.com/p/go.tools/present present (what this presentation was created with)
+
+
+* The fmt Package
+
+Used by importing the fmt package as follows:
+
+import "fmt"
+
+General:
+
+  %v  the value in a default format.
+      When printing structs, the plus flag (%+v) adds field names
+  %#v a Go-syntax representation of the value
+  %T  a Go-syntax representation of the type of the value
+  %%  a literal percent sign; consumes no value
+
+* fmt General verbs - simple string
+
+.play ./tips_and_tricks/fmt1/main.go /START OMIT/,/END OMIT/ 
+
+* fmt General verbs - struct (part 1)
+
+.code ./tips_and_tricks/fmt2/main.go /^type/,/^\)/ 
+
+* fmt General verbs - struct (part 2)
+
+.play ./tips_and_tricks/fmt2/main.go /START OMIT/,/END OMIT/ 
+
+* fmt - Generating Errors with errors.New()
+
+.play ./tips_and_tricks/fmt_error1/main.go /START OMIT/,/END OMIT/ 
+
+* fmt - Generating Errors with fmt.Errorf()
+
+.play ./tips_and_tricks/fmt_error2/main.go /START OMIT/,/END OMIT/ 
+
+* Consistent function Returns - Bad
+
+.code ./tips_and_tricks/function_returns/bad.go /START OMIT/,/END OMIT/ 
+
+* Consistent function Returns - Good
+
+.code ./tips_and_tricks/function_returns/good.go /START OMIT/,/END OMIT/ 
+
+* Consistent function Returns - Better (imo)
+
+.code ./tips_and_tricks/function_returns/better.go /START OMIT/,/END OMIT/ 
+
+
+* Denver Gophers
+
+.link https://github.com/DenverGophers github.com/DenverGophers - All presentations and meetup materials
+.link https://twitter.com/DenverGophers twitter.com/DenverGophers
+.link https://plus.google.com/u/0/communities/104822260820066412402 Google Plus Denver Gophers Group
+
+* Questions?
