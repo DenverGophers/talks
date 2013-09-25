@@ -10,7 +10,7 @@ There will be a sign outside the door promoting our meetup.
 September Agenda
 --------
 
-1. 6:30 - Meet and Greet. Drink some beer and eat some pizza compliments of [Creative Alignments](http://www.creativealignments.com/ "creativealignments.com").
+1. 6:30 - Meet and Greet. Drink some beer and eat some pizza compliments of [BW Bacon](http://www.bwbacon.com/).
 2. 7:00 - 7:15 - [Glitch](https://github.com/levicook/glitch): Presentation by [Levi Cook](http://www.github.com/levicook).
 2. 7:15 - 7:30 - [Go Tips and Tricks](http://denvergophers.com/2013-09/tips-and-tricks.slide#1): Presentation by [Cory LaNou](http://www.github.com/corylanou).
 3. 7:30 - 9:00 - Round table discussions, questions, pair programming
