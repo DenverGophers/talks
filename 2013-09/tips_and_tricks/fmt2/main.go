@@ -42,10 +42,15 @@ func main() {
 	}
 
 	// START OMIT
-	fmt.Printf("%s\n\n", order)
-	fmt.Printf("%v\n\n", order)
+	// This is my default when debugging
 	fmt.Printf("%+v\n\n", order)
+
+	// I use this when I need to know the world about that struct
 	fmt.Printf("%#v\n\n", order)
+
+	// I seldom use these
+	fmt.Printf("%v\n\n", order)
+	fmt.Printf("%s\n\n", order)
 	fmt.Printf("%T\n", order)
 	// END OMIT
 

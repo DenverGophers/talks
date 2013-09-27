@@ -36,7 +36,7 @@ import "fmt"
 General:
 
   %v  the value in a default format.
-      When printing structs, the plus flag (%+v) adds field names
+  %+v When printing structs, adds field names
   %#v a Go-syntax representation of the value
   %T  a Go-syntax representation of the type of the value
   %%  a literal percent sign; consumes no value
@@ -55,9 +55,13 @@ General:
 
 * fmt - Generating Errors with errors.New()
 
+This is my least favorite way of seeing erors created.
+
 .play ./tips_and_tricks/fmt_error1/main.go /START OMIT/,/END OMIT/ 
 
 * fmt - Generating Errors with fmt.Errorf()
+
+This is how I create errors.
 
 .play ./tips_and_tricks/fmt_error2/main.go /START OMIT/,/END OMIT/ 
 
