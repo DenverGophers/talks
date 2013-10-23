@@ -11,8 +11,8 @@ September Agenda
 --------
 
 1. 6:30 - Meet and Greet. Drink some beer and eat some pizza compliments of [BW Bacon](http://www.bwbacon.com/).
-2. 7:00 - 7:15 - [Glitch](https://github.com/levicook/glitch): Presentation by [Levi Cook](http://www.github.com/levicook).
-2. 7:15 - 7:30 - [Go Tips and Tricks](http://denvergophers.com/2013-09/tips-and-tricks.slide#1): Presentation by [Cory LaNou](http://www.github.com/corylanou).
+2. 7:00 - 7:15 - Embdedded Types: Presentation by [Kyle Heidemann](http://www.github.com/heidmotron).
+2. 7:15 - 7:30 - Bookmarking Web App Demo: Presentation by [Wayne Radinsky](https://plus.google.com/s/Wayne%20Radinsky).
 3. 7:30 - 9:00 - Round table discussions, questions, pair programming
 
 
@@ -22,6 +22,13 @@ Talks
 This is a list of slide presentations that we have had at the [Denver Gopher](http://www.meetup.com/Denver-Go-Language-User-Group/) meetups.
 
 Click any of the presentations below to view the slide shows or pdf.
+
+September 26, 2013
+--------
+
+[Glitch](https://github.com/levicook/glitch) by [Levi Cook](http://www.github.com/levicook).
+[Go Tips and Tricks](http://denvergophers.com/2013-09/tips-and-tricks.slide#1) by [Cory LaNou](http://www.github.com/corylanou).
+
 
 August 22, 2013
 --------------
