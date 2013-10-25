@@ -11,7 +11,7 @@ September Agenda
 --------
 
 1. 6:30 - Meet and Greet. Drink some beer and eat some pizza compliments of [BW Bacon](http://www.bwbacon.com/).
-2. 7:00 - 7:15 - Embdedded Types: Presentation by [Kyle Heidemann](http://www.github.com/heidmotron).
+2. 7:00 - 7:15 - Embdedded Types: Presentation by [Matt Heidemann](http://www.github.com/heidmotron).
 2. 7:15 - 7:30 - Bookmarking Web App Demo: Presentation by [Wayne Radinsky](https://plus.google.com/s/Wayne%20Radinsky).
 3. 7:30 - 8:00 - Hacker Challenge!
 4. 8:00 - 9:00 - Round table discussions, questions, pair programming
