@@ -7,14 +7,13 @@ Galvanize/Gather: [1062 Delaware Street, Denver CO 80204](http://goo.gl/TqlYe) -
 Just walk through Gather (the restaruant) and we are in the second conference room on the left.  
 There will be a sign outside the door promoting our meetup.
 
-September Agenda
+November 14, 2013 Agenda
 --------
 
 1. 6:30 - Meet and Greet. Drink some beer and eat some pizza compliments of [BW Bacon](http://www.bwbacon.com/).
-2. 7:00 - 7:15 - Embdedded Types: Presentation by [Matt Heidemann](http://www.github.com/heidmotron).
-2. 7:15 - 7:30 - Bookmarking Web App Demo: Presentation by [Wayne Radinsky](https://plus.google.com/s/Wayne%20Radinsky).
-3. 7:30 - 8:00 - Hacker Challenge!
-4. 8:00 - 9:00 - Round table discussions, questions, pair programming
+2. 7:00 - 7:30 - [exercism.io](http://exercism.io) presented by  [Katrina Owen](http://www.github.com/kytrinyx).
+3. 7:30 - 8:30 - Help Katrina create go examples for exercism.io!
+4. 8:30 - 9:00 - Round table discussions, questions, pair programming
 
 
 Talks
@@ -23,6 +22,13 @@ Talks
 This is a list of slide presentations that we have had at the [Denver Gopher](http://www.meetup.com/Denver-Go-Language-User-Group/) meetups.
 
 Click any of the presentations below to view the slide shows or pdf.
+
+October 24, 2013
+--------
+
+Embdedded Types: Presentation by [Matt Heidemann](http://www.github.com/heidmotron).
+Bookmarking Web App Demo: Presentation by [Wayne Radinsky](https://plus.google.com/s/Wayne%20Radinsky).
+
 
 September 26, 2013
 --------
