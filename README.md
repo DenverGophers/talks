@@ -11,8 +11,9 @@ November 14, 2013 Agenda
 --------
 
 1. 6:30 - Meet and Greet. Drink some beer and eat some pizza compliments of [BW Bacon](http://www.bwbacon.com/).
-2. 7:00 - 7:30 - [exercism.io](http://exercism.io) presented by  [Katrina Owen](http://www.github.com/kytrinyx).
-3. 7:30 - 8:30 - Help Katrina create go examples for exercism.io!
+2. 7:00 - 7:30 - CGO/Assembly presented by Caleb Doxsey.
+2. 7:30 - 8:00 - [exercism.io](http://exercism.io) presented by  [Katrina Owen](http://www.github.com/kytrinyx).
+3. 8:00 - 8:30 - Help Katrina create go examples for exercism.io!
 4. 8:30 - 9:00 - Round table discussions, questions, pair programming
 
 
