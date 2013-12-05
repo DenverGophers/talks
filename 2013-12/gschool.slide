@@ -190,7 +190,7 @@ The go tool and the testing package provide a lightweight test framework.
 * Resources
 
 .link http://golang.org golang.org
-.link http://denvergophers.com/talks/2013-12/gschool denvergophers.com/talks/2013-12/gschool | (This Presentation and source)
+.link http://denvergophers.com/2013-12/gschool.slide#1 denvergophers.com/talks/2013-12/gschool | (This Presentation and source)
 .link https://code.google.com/p/go/source/browse/?repo=tools#hg%2Fpresent present (what this presentation was created with)
 .link http://talks.golang.org/2012/simple.slide Presentation from Andrew Gerrand that I stole several slides from
 
