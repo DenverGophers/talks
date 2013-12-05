@@ -14,9 +14,6 @@ Cory LaNou
 - Who is SupportLocal
 - How did we arrive at our currently techology stack
 - Overview of our current stack
-- Overview of Go
-
-- NOTE: I shamelessly stole several slides about Go from Andrew Gerrand presentation (See resources at end of slide)
 
 * About SupportLocal
 
@@ -159,30 +156,7 @@ We maintain a strong separation between front-end and back-end development.
 - Google Analytics
 - uri.js - URL building library (beats concatenation)
 
-* And now back to Go
-
-* What did Go bring us?
-
-- Efficiency
-- Safety
-- Concurrency
-- Scalability
-- Fast development cycle
-- No surprises
-- A cute mascot (for extra credit, anybody know his name?)
-
-* Go is:
-
--  Lightweight, avoids unnecessary repetition
--  Object Oriented, but not in the usual way
--  Concurrent, in a way that keeps you sane
--  Designed for working programmers
-
-* Packages
-- Go code lives in packages.
-- Packages contain type, function, variable, and constant declarations.
-- Packages can be very small (package errors has just one declaration) or very large (package net/http has >100 declarations). Most are somewhere in between.
-- Case determines visibility: Foo is exported, foo is not
+* and now back go Go...
 
 * Go compiles really fast
 
@@ -200,67 +174,13 @@ We maintain a strong separation between front-end and back-end development.
   user    0m14.273s
   sys     0m5.164s
 
-* Tools
-
-* The go tool
-
-The go tool is the de facto standard for building and installing Go code.
-
-Compile and run a single-file program:
-
-  $ go run hello.go
-
-Build and install the package in the current directory (and its dependencies):
-
-  $ go install
-
-Build and install the fmt package (and its dependencies):
-
-  $ go install fmt
-
-This tool also acts as an interface for most of the Go tools.
-
-
-* Godoc
-
-Godoc extracts documentation from Go code and presents it in a variety of forms.
-
-Comments need no special format, they just need to precede what they document.
-
-  // Split slices s into all substrings separated by sep and returns a slice of
-  // the substrings between those separators.
-  // If sep is empty, Split splits after each UTF-8 sequence.
-  // It is equivalent to SplitN with a count of -1.
-
-.image /2013-12/gschool/img/split.png
-
-Documentation that lives with code is easy to keep up-to-date.
-
-* Gofmt
-The gofmt tool is a pretty-printer for Go source code.
-
-All Go code in the core is gofmt'd, as is ~70% of open source Go code.
-
-Ends boring formatting discussions.
-
-Improves readability. Improves writability.
-
-Saves a huge amount of time.
-
-* Tests: writing
-
-The go tool and the testing package provide a lightweight test framework.
-
-
-.code gschool/test.go /^func TestIndex/,/^}/
-
 
 * Resources
 
 .link http://golang.org golang.org
 .link http://denvergophers.com/2013-12/gschool.slide#1 denvergophers.com/talks/2013-12/gschool | (This Presentation and source)
 .link https://code.google.com/p/go/source/browse/?repo=tools#hg%2Fpresent present (what this presentation was created with)
-.link http://talks.golang.org/2012/simple.slide Presentation from Andrew Gerrand that I stole several slides from
+.link http://talks.golang.org/2012/simple.slide Presentation from Andrew Gerrand
 
 
 
