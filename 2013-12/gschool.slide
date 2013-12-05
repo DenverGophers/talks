@@ -1,4 +1,4 @@
-SupportLocal - Technology Talk 
+SupportLocal - Technology Talk
 Presented for gSchool
 11:00 06 Dec 2013
 Tags: supportlocal gschool go
@@ -36,11 +36,13 @@ We used to be JoinLocal
 - Micrsoft Windows Web Server
 
 Pros
+
 - MVC.Net was better than Traditional .Net
 - Utilized Entitiy Framework (their equivalent of ActiveRecord)
 - Compiled Language
 
 Cons
+
 - Entity framework was buggy, and barely worked.
 - Entity framework was a LONG ways from what ActiveRecord is
 - MVC.net was still so new that it was pretty rough to work with
@@ -53,12 +55,14 @@ Cons
 * Enter Ruby on Rails
 
 Pros
+
 - Huge open source support
 - High adoption
 - Rapid development
 - Levi had extensive experience in it
 
 Cons
+
 - Cory didn't know it
 - Not a compiled language
 
@@ -67,36 +71,95 @@ Cons
 Quite well!
 
 - We shortened out development cycles significantly over MVC.net
-- Get more content from Levi here 
+- And all the magic Rails brought with it
 
 * So why switch to Go?
 
 Mainly, tired of all the "magic" of Rails.
 
-- Ruby/Rails allowed people to do CRAZY things, like redefine "boolean" operations
-- Most of the hard bugs in our system came down to someones gem doing something crazy
+- bundle udpate / gem nightmares
+- master debugging skills required too often
 
 * What do we use go for?
 
-- Web server
-- Security
-- Serve assets (javascript,html templates, images, etc.)
-- JSON end point
+Back-end Development
 
-* What do we use for our front end stack (UI)
+- "dynos"
+- data loaders
+- http servers
+- one off scripting tasks (really)
 
-We use a flavor of Javscript MVC with these technologies
+* http servers
 
-- Node 
-- Grunt
-- Blah blah blah
+- static assets
+- restful json api
+- authenication and authorization
+- etc.
 
-* Why such a strong separation
+* dynos
 
-- UI's are rich, interactive, and responsive.
-- No server technology exists today that can hold a candle to a front end framework
-- Allows us to prototype, test, and completely build rich interactive clients without ever creating any back end architecture
-- I can have a Front End developer (html, css, javascript) be incredibly productive without having to know Backend (Go, mongoDB, Sphinx, Linix, etc.)
+- background processing
+
+
+* Front-end Development
+
+- HTML, CSS and JavaSript
+- Sadly, no go (yet)
+
+We maintain a strong separation between front-end and back-end development.
+
+- Each has significant, separate problems
+- Let each world pick the best tools for the job at hand
+
+
+* Front-end Development cont..
+
+** Complicated and ugly :(
+
+- Users expect rich, highly responsive user interfaces
+- Requires a ton of JavaSript, which demands modularity and automation
+- Modularity and automation requires tools, here's what we use...
+
+
+* Tooling and Libraries
+
+- Build and Packaging Tools - Compile and test all of the assets
+- Automation Tools - too much to manage by hand
+- Libraries - sane javascript: modular, observable
+
+
+* Building and Packaging Tools
+
+- Node - "command line JavaSript"
+- Grunt - Rake (sort of)
+- Browserify - Write browser code with node-style requires
+- Bower - JavaSript packager manager, for browsers
+- Recess - less linter and compiler
+- Usemin+FileRev - cache busting
+
+
+* Automation Tools
+- livereload - reload my browser when stuff changes
+- jslint - validate js files, as they change
+- recess - validate less files, as they change
+- tidy -  validate html files, as they change
+- automatically run tests too
+- PhantomJS - headless browser
+- Mocha + Chai - like minitest / rspec / etc.
+
+
+* JavaSript Frameworks
+
+- Bootstrap (hate it, not modular, but it's useful)
+- jQuery - DOM Manipulation
+- CanJS - Observables (just do it)
+- MapBox - Must have maps
+- Braintree - PCI is hard, they solved it for us
+- Facebook + Twitter SDKS
+- Google Analytics
+- uri.js - URL building library (beats concatenation)
+
+* And now back to Go
 
 * What did Go bring us?
 
@@ -123,14 +186,19 @@ We use a flavor of Javscript MVC with these technologies
 
 * Go compiles really fast
 
+- current
+  $ time go build
+
+  real    0m1.268s
+  user    0m1.074s
+  sys     0m0.164s
+
+- legacy
   $ time go build
 
   real    0m7.550s
   user    0m14.273s
   sys     0m5.164s
-
--NOTE: This build is actually slow and based on our current production go program.
-We are currently re-architecting our go project such that it builds even faster.
 
 * Tools
 
