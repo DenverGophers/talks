@@ -1,0 +1,199 @@
+SupportLocal - Technology Talk 
+Presented for gSchool
+11:00 06 Dec 2013
+Tags: supportlocal gschool go
+
+Levi Cook
+Cory LaNou
+
+@levicook
+@corylanou
+
+* About this presentation
+
+- Who is SupportLocal
+- How did we arrive at our currently techology stack
+- Overview of our current stack
+- Overview of Go
+
+- NOTE: I shamelessly stole several slides about Go from Andrew Gerrand presentation (See resources at end of slide)
+
+* About SupportLocal
+
+- We are trusted search.
+- We were not always trusted search
+- Ok, we weren't even always SupportLocal
+
+We used to be JoinLocal
+
+- JoinLocal was a white label product for yellow page directories
+- YP's move too slow, so we pivoted
+
+* Our first technology stack
+
+- Microsoft .Net MVC
+- Microsoft SQL Server
+- Micrsoft Windows Web Server
+
+Pros
+- MVC.Net was better than Traditional .Net
+- Utilized Entitiy Framework (their equivalent of ActiveRecord)
+- Compiled Language
+
+Cons
+- Entity framework was buggy, and barely worked.
+- Entity framework was a LONG ways from what ActiveRecord is
+- MVC.net was still so new that it was pretty rough to work with
+
+* So that didn't work... what next
+
+- We stayed with MVC.net for about 6 months before calling it.
+- It was time to move on, so...
+
+* Enter Ruby on Rails
+
+Pros
+- Huge open source support
+- High adoption
+- Rapid development
+- Levi had extensive experience in it
+
+Cons
+- Cory didn't know it
+- Not a compiled language
+
+* How did Ruby on Rails work out?
+
+Quite well!
+
+- We shortened out development cycles significantly over MVC.net
+- Get more content from Levi here 
+
+* So why switch to Go?
+
+Mainly, tired of all the "magic" of Rails.
+
+- Ruby/Rails allowed people to do CRAZY things, like redefine "boolean" operations
+- Most of the hard bugs in our system came down to someones gem doing something crazy
+
+* What do we use go for?
+
+- Web server
+- Security
+- Serve assets (javascript,html templates, images, etc.)
+- JSON end point
+
+* What do we use for our front end stack (UI)
+
+We use a flavor of Javscript MVC with these technologies
+
+- Node 
+- Grunt
+- Blah blah blah
+
+* Why such a strong separation
+
+- UI's are rich, interactive, and responsive.
+- No server technology exists today that can hold a candle to a front end framework
+- Allows us to prototype, test, and completely build rich interactive clients without ever creating any back end architecture
+- I can have a Front End developer (html, css, javascript) be incredibly productive without having to know Backend (Go, mongoDB, Sphinx, Linix, etc.)
+
+* What did Go bring us?
+
+- Efficiency
+- Safety
+- Concurrency
+- Scalability
+- Fast development cycle
+- No surprises
+- A cute mascot (for extra credit, anybody know his name?)
+
+* Go is:
+
+-  Lightweight, avoids unnecessary repetition
+-  Object Oriented, but not in the usual way
+-  Concurrent, in a way that keeps you sane
+-  Designed for working programmers
+
+* Packages
+- Go code lives in packages.
+- Packages contain type, function, variable, and constant declarations.
+- Packages can be very small (package errors has just one declaration) or very large (package net/http has >100 declarations). Most are somewhere in between.
+- Case determines visibility: Foo is exported, foo is not
+
+* Go compiles really fast
+
+  $ time go build
+
+  real    0m7.550s
+  user    0m14.273s
+  sys     0m5.164s
+
+-NOTE: This build is actually slow and based on our current production go program.
+We are currently re-architecting our go project such that it builds even faster.
+
+* Tools
+
+* The go tool
+
+The go tool is the de facto standard for building and installing Go code.
+
+Compile and run a single-file program:
+
+  $ go run hello.go
+
+Build and install the package in the current directory (and its dependencies):
+
+  $ go install
+
+Build and install the fmt package (and its dependencies):
+
+  $ go install fmt
+
+This tool also acts as an interface for most of the Go tools.
+
+
+* Godoc
+
+Godoc extracts documentation from Go code and presents it in a variety of forms.
+
+Comments need no special format, they just need to precede what they document.
+
+  // Split slices s into all substrings separated by sep and returns a slice of
+  // the substrings between those separators.
+  // If sep is empty, Split splits after each UTF-8 sequence.
+  // It is equivalent to SplitN with a count of -1.
+
+.image /2013-12/gschool/img/split.png
+
+Documentation that lives with code is easy to keep up-to-date.
+
+* Gofmt
+The gofmt tool is a pretty-printer for Go source code.
+
+All Go code in the core is gofmt'd, as is ~70% of open source Go code.
+
+Ends boring formatting discussions.
+
+Improves readability. Improves writability.
+
+Saves a huge amount of time.
+
+* Tests: writing
+
+The go tool and the testing package provide a lightweight test framework.
+
+
+.code gschool/test.go /^func TestIndex/,/^}/
+
+
+* Resources
+
+.link http://golang.org golang.org
+.link http://denvergophers.com/talks/2013-12/gschool denvergophers.com/talks/2013-12/gschool | (This Presentation and source)
+.link https://code.google.com/p/go/source/browse/?repo=tools#hg%2Fpresent present (what this presentation was created with)
+.link http://talks.golang.org/2012/simple.slide Presentation from Andrew Gerrand that I stole several slides from
+
+
+
+
