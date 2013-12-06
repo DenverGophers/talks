@@ -174,8 +174,37 @@ We maintain a strong separation between front-end and back-end development.
   user    0m14.273s
   sys     0m5.164s
 
+* Front End Resources
 
-* Resources
+* Building and Packaging Tool Resources
+
+.link http://nodejs.org/ node
+.link http://gruntjs.com/ grunt
+.link http://browserify.org/ browserify
+.link http://bower.io/ bower
+.link http://twitter.github.io/recess/ recess
+.link https://github.com/yeoman/grunt-usemin usemin
+.link https://github.com/yeoman/grunt-filerev filerev
+
+* Automation Tools
+.link http://livereload.com/ livereload
+.link http://www.jslint.com/ jslint
+.link http://tidy.sourceforge.net/ tidy
+.link http://phantomjs.org/ phantomjs
+.link http://visionmedia.github.io/mocha/ mocha
+.link http://chaijs.com/ chai
+
+* Javascript Frameworks
+
+.link http://getbootstrap.com/ bootstrap
+.link http://jquery.com/ jquery
+.link http://canjs.com/ canjs
+.link http://canjs.com/ mapbox
+.link https://www.braintreepayments.com/ BrainTree
+.link http://medialize.github.io/URI.js/ uri.js
+
+
+* Other Resources
 
 .link http://golang.org golang.org
 .link http://denvergophers.com/2013-12/gschool.slide#1 denvergophers.com/talks/2013-12/gschool | (This Presentation and source)
