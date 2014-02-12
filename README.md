@@ -7,13 +7,12 @@ Galvanize/Gather: [1062 Delaware Street, Denver CO 80204](http://goo.gl/TqlYe) -
 Just walk through Gather (the restaruant) and we are in the second conference room on the left.  
 There will be a sign outside the door promoting our meetup.
 
-November 14, 2013 Agenda
+February 27, 2014 Agenda
 --------
 
-1. 6:30 - Meet and Greet. Drink some beer and eat some pizza compliments of [BW Bacon](http://www.bwbacon.com/).
-2. 7:00 - 7:30 - CGO/Assembly presented by Caleb Doxsey.
-2. 7:30 - 8:00 - [exercism.io](http://exercism.io) [repo](https://github.com/exercism/exercism.io) presented by  [Katrina Owen](http://www.github.com/kytrinyx).
-3. 8:00 - 8:30 - Help Katrina create go examples for exercism.io!
+1. 6:30 - Meet and Greet. Drink some beer and eat some pizza compliments of [Pivotal Labs](http://www.pivotallabs.com/).
+2. 7:00 - 7:30 - [WebRTC](http://www.doxsey.net/blog/rethinking-web-development--webrtc/) presented by [Caleb Doxsey](http://www.github.com/calebdoxsey).
+2. 7:30 - 8:30 - TBD.
 4. 8:30 - 9:00 - Round table discussions, questions, pair programming
 
 
@@ -23,6 +22,19 @@ Talks
 This is a list of slide presentations that we have had at the [Denver Gopher](http://www.meetup.com/Denver-Go-Language-User-Group/) meetups.
 
 Click any of the presentations below to view the slide shows or pdf.
+
+January 23, 2014
+--------
+
+[Keyvault](http://talks.gokyle.org/denver.gophers/2014/keyvault.slide) presented by [Kyle Isom](http://www.github.com/gokyle).
+[SupportLocal Technology Talk](http://www.denvergophers.com/2013-12/gschool.slide) presented by [Cory LaNou](http://www.github.com/corylanou).
+
+November 14, 2013
+--------
+
+CGO/Assembly presented by Caleb Doxsey.
+[exercism.io](http://exercism.io) [repo](https://github.com/exercism/exercism.io) presented by  [Katrina Owen](http://www.github.com/kytrinyx).
+
 
 October 24, 2013
 --------
