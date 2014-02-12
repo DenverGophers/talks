@@ -1,4 +1,4 @@
-Next Meetup - 2013.09.25
+Next Meetup - Thursday, February 27, 2014
 ==========
 
 Location
