@@ -21,7 +21,7 @@ Just walk through Gather (the restaruant) and we are in the second conference ro
 There will be a sign outside the door promoting our meetup.
 
 
-Talks
+Past Meetups/Talks
 ================
 
 This is a list of slide presentations that we have had at the [Denver Gopher](http://www.meetup.com/Denver-Go-Language-User-Group/) meetups.
@@ -31,28 +31,28 @@ Click any of the presentations below to view the slide shows or pdf.
 January 23, 2014
 --------
 
-[Keyvault](http://talks.gokyle.org/denver.gophers/2014/keyvault.slide) presented by [Kyle Isom](http://www.github.com/gokyle).
-[SupportLocal Technology Talk](http://www.denvergophers.com/2013-12/gschool.slide) presented by [Cory LaNou](http://www.github.com/corylanou).
+* [Keyvault](http://talks.gokyle.org/denver.gophers/2014/keyvault.slide) presented by [Kyle Isom](http://www.github.com/gokyle).
+* [SupportLocal Technology Talk](http://www.denvergophers.com/2013-12/gschool.slide) presented by [Cory LaNou](http://www.github.com/corylanou).
 
 November 14, 2013
 --------
 
-CGO/Assembly presented by Caleb Doxsey.
-[exercism.io](http://exercism.io) [repo](https://github.com/exercism/exercism.io) presented by  [Katrina Owen](http://www.github.com/kytrinyx).
+* CGO/Assembly presented by Caleb Doxsey.
+* [exercism.io](http://exercism.io) [repo](https://github.com/exercism/exercism.io) presented by  [Katrina Owen](http://www.github.com/kytrinyx).
 
 
 October 24, 2013
 --------
 
-Embdedded Types: Presentation by [Matt Heidemann](http://www.github.com/heidmotron).
-Bookmarking Web App Demo: Presentation by [Wayne Radinsky](https://plus.google.com/s/Wayne%20Radinsky).
+* Embdedded Types: Presentation by [Matt Heidemann](http://www.github.com/heidmotron).
+* Bookmarking Web App Demo: Presentation by [Wayne Radinsky](https://plus.google.com/s/Wayne%20Radinsky).
 
 
 September 26, 2013
 --------
 
-[Glitch](https://github.com/levicook/glitch) by [Levi Cook](http://www.github.com/levicook).
-[Go Tips and Tricks](http://denvergophers.com/2013-09/tips-and-tricks.slide#1) by [Cory LaNou](http://www.github.com/corylanou).
+* [Glitch](https://github.com/levicook/glitch) by [Levi Cook](http://www.github.com/levicook).
+* [Go Tips and Tricks](http://denvergophers.com/2013-09/tips-and-tricks.slide#1) by [Cory LaNou](http://www.github.com/corylanou).
 
 
 August 22, 2013
