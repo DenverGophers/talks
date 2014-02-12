@@ -21,11 +21,12 @@ Just walk through Gather (the restaruant) and we are in the second conference ro
 There will be a sign outside the door promoting our meetup.
 
 
-[Past Meetups/Talks](https://github.com/DenverGophers/talks/blob/master/PAST.md)
-----
+### [Past Meetups/Talks](https://github.com/DenverGophers/talks/blob/master/PAST.md)
+> View a list of our past meetups, links to presentations and talks.
 
-[Resources](https://github.com/DenverGophers/talks/blob/master/RESOURCES.md)
-----
 
-[About Denver Gophers](https://github.com/DenverGophers/talks/blob/master/ABOUT.md)
-----
+### [Resources](https://github.com/DenverGophers/talks/blob/master/RESOURCES.md)
+> List of go resources (books, slides, talks and more).
+
+### [About Denver Gophers](https://github.com/DenverGophers/talks/blob/master/ABOUT.md)
+> Who we are and who our sponsors are.
