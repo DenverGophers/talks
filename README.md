@@ -1,14 +1,14 @@
 Next Meetup
 ==========
 
-* Date: Thursday, February 27, 2014
+* Date: Thursday, March 27, 2014
 * Time: 7:00 - 9:00
 * Where: [Galvanize: 1062 Delaware Street, Denver CO 80204](http://goo.gl/TqlYe)
 * RSVP: [www.meetup.com/Denver-Go-Language-User-Group](http://www.meetup.com/Denver-Go-Language-User-Group/events/159414062/)
 * Amenities: Free beer and pizza compliments of [Pivotal Labs](http://www.pivotallabs.com/)
 
 
-March 27, 2014 Agenda
+Agenda
 --------
 
 1. 6:30 - Meet and Greet. Drink some beer and eat some pizza compliments of [Pivotal Labs](http://www.pivotallabs.com/).
