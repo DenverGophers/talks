@@ -8,13 +8,14 @@ Next Meetup
 * Amenities: Free beer and pizza compliments of [Pivotal Labs](http://www.pivotallabs.com/)
 
 
-February 27, 2014 Agenda
+March 27, 2014 Agenda
 --------
 
 1. 6:30 - Meet and Greet. Drink some beer and eat some pizza compliments of [Pivotal Labs](http://www.pivotallabs.com/).
-2. 7:00 - 7:30 - [WebRTC](http://www.doxsey.net/blog/rethinking-web-development--webrtc/) presented by [Caleb Doxsey](http://www.github.com/calebdoxsey).
-2. 7:30 - 8:00 - Interfaces in Go: Preparing for Change presented by [Matt Self](https://github.com/m4tty)
-4. 8:00 - 9:00 - Round table discussions, questions, pair programming
+2. 7:00 - 7:10 - Intro to Go Lightning Talk [Cory LaNou](https://github.com/corylanou)
+3. 7:10 - 7:40 - TBD.
+4. 7:40 - 8:10 - TBD.
+5. 8:00 - 9:00 - Round table discussions, questions, pair programming
 
 We meet in the ViaWest Cloud Conference Room East.  
 Just walk through Gather (the restaruant) and we are in the second conference room on the left.  
