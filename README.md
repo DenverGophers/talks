@@ -13,7 +13,7 @@ Agenda
 
 * 6:30 - Meet and Greet. Drink some beer and eat some pizza compliments of [Pivotal Labs](http://www.pivotallabs.com/).
 * 7:00 - 7:10 - Intro to Go Lightning Talk - [Cory LaNou](https://github.com/corylanou) - [@supportlocal](https://twitter.com/supportlocal)
-* 7:10 - 7:40 - Go framework for controlling hardware via a beaglebone - Craig Swank.
+* 7:10 - 7:40 - Go framework for controlling hardware via a beaglebone - [Craig Swank](https://bitbucket.org/cswank).
 * 7:40 - 8:10 - Taking Back the Command Line with Go - [Mike Gehard](http://msgehard.github.io/) - [@pivotallabs](https://twitter.com/pivotallabs)
 * 8:00 - 9:00 - Round table discussions, questions, pair programming
 
