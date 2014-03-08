@@ -8,19 +8,6 @@ Gopher
 http://denvergophers.github.io/
 @corylanou
 
-* why go?
-
-* Because we have an awesome mascott!
-
-.image /2014-03/intro_go_lightning/img/gopher.jpg
-
-* but seriously...
-
-* In the words of Andrew Gerrand
-
-- software _should_ be simple
-- software _can_ be simple
-
 * What tip would you give someone new to go?
 
 .image intro_go_lightning/img/matt_tweet.png
@@ -36,6 +23,19 @@ http://denvergophers.github.io/
 * leave your object oriented brain at home. Embrace the interface.
 
 .image intro_go_lightning/img/mike_tweet.png
+
+* so... why go?
+
+* Because we have an awesome mascott!
+
+.image /2014-03/intro_go_lightning/img/gopher.jpg
+
+* but seriously...
+
+* In the words of Andrew Gerrand
+
+- software _should_ be simple
+- software _can_ be simple
 
 * I shamelessly stole most of these slides from Andrew Gerrand
 
@@ -59,8 +59,27 @@ http://denvergophers.github.io/
 - Simple type system
 - Concurrency primitives
 - Rich standard library
-- Great tools
 - Open source
+- Great Tools
+- Testing and Benchmarking
+
+
+* The "go" command
+
+  build       compile packages and dependencies
+  clean       remove object files
+  env         print Go environment information
+  fix         run go tool fix on packages
+  fmt         run gofmt on package sources
+  get         download and install packages and dependencies
+  install     compile and install packages and dependencies
+  list        list packages
+  run         compile and run Go program
+  test        test packages
+  tool        run specified go tool
+  version     print Go version
+  vet         run go tool vet on packages
+
 
 
 * Hello, Go
