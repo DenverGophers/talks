@@ -3,9 +3,9 @@ Intro to Go
 Tags: go
 
 Cory LaNou
-CIO | Founder - SupportLocal.com
-cory@supportlocal.com
-http://supportlocal.com/
+Gopher
+
+http://denvergophers.github.io/
 @corylanou
 
 * why go?
@@ -14,12 +14,115 @@ http://supportlocal.com/
 
 .image /2014-03/intro_go_lightning/img/gopher.jpg
 
-* but seriosly...
+* but seriously...
 
 * In the words of Andrew Gerrand
 
 - software _should_ be simple
 - software _can_ be simple
+
+* What tip would you give someone new to go?
+
+.image intro_go_lightning/img/matt_tweet.png
+
+* embrace the language: simplicity, concurrency, and composition.
+
+.image intro_go_lightning/img/francesc_tweet.png
+
+* don’t try to compare it to java, c# or python
+
+.image intro_go_lightning/img/dave_tweet.png
+
+* leave your object oriented brain at home. Embrace the interface.
+
+.image intro_go_lightning/img/mike_tweet.png
+
+* I shamelessly stole most of these slides from Andrew Gerrand
+
+.link https://speakerdeck.com/railsberry/go-a-simple-programming-environment-by-andrew-gerrand
+
+* What Andrew means by "simple"
+
+- Small
+- Readable
+- Consistent
+- Orthogonal
+- Predictable
+- Robust
+- Useful by default
+
+* Go at a glance
+
+- Compiled
+- Statically typed
+- Clean syntax
+- Simple type system
+- Concurrency primitives
+- Rich standard library
+- Great tools
+- Open source
+
+
+* Hello, Go
+
+.play ./intro_go_lightning/hello.go
+
+* go
+
+Go routines are light weight threads that are managed by the Go runtime. 
+To run a function in a new go routine, just put "go" before the function call.
+
+.play ./intro_go_lightning/routine.go
+
+* chan
+
+Channels are typed conduits for synchronization and communication between go routines.
+
+They're a versatile and expressive means of modeling concurrent processes.
+
+.play ./intro_go_lightning/channels.go
+
+* sync
+
+Channels are great, but sometimes other concurrency mechanisms are a better fit.
+The sync package provides mutexes, condition variables, and more useful primitives.
+
+.play ./intro_go_lightning/sync.go /START OMIT/,/END OMIT/ 
+
+* net/http (1/2)
+
+The net/http package provides a HTTP client.
+
+.play ./intro_go_lightning/net_1.go /START OMIT/,/END OMIT/ 
+
+The client handles HTTP Keep-Alive using a pool of connections, by default. 
+(This is configurable, of course.)
+
+* net/http (2/2)
+
+The net/http package also provides an HTTP server.
+
+.play ./intro_go_lightning/net_2.go /START OMIT/,/END OMIT/ 
+
+This is a high-performance, DoS-hardened, production-ready web server.
+It serves dl.google.com
+
+* Getting Started
+
+.link http://tour.golang.org tour.golang.org
+
+* How to get help
+
+- Create it: 
+
+.link http://play.golang.org play.golang.org
+
+- Post it:
+
+.link https://plus.google.com/communities/114112804251407510571 g+ Go Community
+.link https://groups.google.com/forum/#!forum/golang-nutsk  go-nuts mailing list
+
+If all else fails, you can use twitter to reach out to me @corylanou.
 
 * Want to learn more?
 
