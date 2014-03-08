@@ -14,7 +14,7 @@ Agenda
 1. 6:30 - Meet and Greet. Drink some beer and eat some pizza compliments of [Pivotal Labs](http://www.pivotallabs.com/).
 2. 7:00 - 7:10 - Intro to Go Lightning Talk [Cory LaNou](https://github.com/corylanou)
 3. 7:10 - 7:40 - TBD.
-4. 7:40 - 8:10 - TBD.
+4. 7:40 - 8:10 - Taking Back the Command Line with Go [Mike Gehard](http://msgehard.github.io/)
 5. 8:00 - 9:00 - Round table discussions, questions, pair programming
 
 We meet in the ViaWest Cloud Conference Room East.  
