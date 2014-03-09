@@ -37,10 +37,6 @@ http://denvergophers.github.io/
 - software _should_ be simple
 - software _can_ be simple
 
-* I shamelessly stole most of these slides from Andrew Gerrand
-
-.link https://speakerdeck.com/railsberry/go-a-simple-programming-environment-by-andrew-gerrand
-
 * What Andrew means by "simple"
 
 - Small
@@ -175,6 +171,12 @@ All of our talks are listed here:
 And of course our github repo:
 
 .link https://github.com/denvergophers github.com/denvergophers
+
+* References
+
+Many of the example slides in the presentation are based on or directly from:
+
+.link https://speakerdeck.com/railsberry/go-a-simple-programming-environment-by-andrew-gerrand Andrew Gerrand's Railsberry Presentation
 
 
 
