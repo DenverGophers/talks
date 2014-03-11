@@ -18,4 +18,5 @@ func main() {
 	}
 	io.Copy(os.Stdout, r.Body)
 }
+
 // END OMIT
