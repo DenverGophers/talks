@@ -128,11 +128,25 @@ It serves dl.google.com
 
 .image intro_go_lightning/img/dave_tweet.png
 
-_or_ruby_
-
 * leave your object oriented brain at home. Embrace the interface.
 
 .image intro_go_lightning/img/mike_tweet.png
+
+* What is the most important thing to tell rubyists about Go
+
+.image intro_go_lightning/img/cory_tweet.png
+
+* Sometimes you have to write your code on more than one line, and that is not a bad thing...
+
+.image intro_go_lightning/img/dave_tweet2.png
+
+* Compile time type checks save time on error handling, testing, documentation, and debugging
+
+.image intro_go_lightning/img/nate_tweet.png
+
+* Go's compiler is so fast it compiles before the Ruby interpreter even spins up.  Don't fear it
+
+.image intro_go_lightning/img/brian_tweet.png
 
 * Getting Started
 
