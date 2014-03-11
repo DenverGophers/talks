@@ -8,6 +8,20 @@ Gopher
 http://denvergophers.github.io/
 @corylanou
 
+* Companies using Go
+
+- Canonical
+- SendGrid
+- Bitly
+- Heroku
+- Iron.io
+- BBC World News
+- Nokia Siemens Network
+- Cloud Foundry
+- CloudFlare
+- Airbrake
+- and so many more...
+
 * What tip would you give someone new to go?
 
 .image intro_go_lightning/img/matt_tweet.png
@@ -97,12 +111,12 @@ They're a versatile and expressive means of modeling concurrent processes.
 
 .play ./intro_go_lightning/channels.go
 
-* sync
-
-Channels are great, but sometimes other concurrency mechanisms are a better fit.
-The sync package provides mutexes, condition variables, and more useful primitives.
-
-.play ./intro_go_lightning/sync.go /START OMIT/,/END OMIT/ 
+// * sync
+//
+// Channels are great, but sometimes other concurrency mechanisms are a better fit.
+// The sync package provides mutexes, condition variables, and more useful primitives.
+//
+// .play ./intro_go_lightning/sync.go /START OMIT/,/END OMIT/ 
 
 * net/http (1/2)
 
