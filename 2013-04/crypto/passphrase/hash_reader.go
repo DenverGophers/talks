@@ -33,4 +33,3 @@ func main() {
 	digest := SHA512Reader(buf)
 	fmt.Printf("SHA512('%s') = %v\n", string(message), digest)
 }
-

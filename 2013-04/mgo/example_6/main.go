@@ -60,6 +60,6 @@ func logRequest(handler func(http.ResponseWriter, *http.Request)) func(http.Resp
 	return func(w http.ResponseWriter, r *http.Request) {
 		var s = time.Now()
 		handler(w, r)
-		log.Printf("%s %s %6.3fms", r.Method, r.RequestURI, (time.Since(s).Seconds()*1000))
+		log.Printf("%s %s %6.3fms", r.Method, r.RequestURI, (time.Since(s).Seconds() * 1000))
 	}
 }

@@ -1,7 +1,7 @@
 package main
 
 import (
-        "bytes"
+	"bytes"
 	"crypto/aes"
 	"crypto/cipher"
 	"crypto/rand"
@@ -12,7 +12,7 @@ import (
 const KeySize = 16
 
 var (
-        ErrBadKey = fmt.Errorf("invalid key")
+	ErrBadKey        = fmt.Errorf("invalid key")
 	ErrPadding       = fmt.Errorf("invalid padding")
 	ErrRandomFailure = fmt.Errorf("failed to read enough random data")
 )
@@ -93,10 +93,10 @@ func Encrypt(key []byte, msg []byte) (ct []byte, err error) {
 		return
 	}
 
-        padded, err := PadBuffer(msg)
-        if err != nil {
-                return
-        }
+	padded, err := PadBuffer(msg)
+	if err != nil {
+		return
+	}
 
 	cbc := cipher.NewCBCEncrypter(c, iv)
 	cbc.CryptBlocks(padded, padded) // encrypt in-place
@@ -126,7 +126,7 @@ func Decrypt(key []byte, ct []byte) (msg []byte, err error) {
 
 	cbc := cipher.NewCBCDecrypter(c, iv)
 	cbc.CryptBlocks(msg, msg)
-        msg, err = UnpadBuffer(msg)
+	msg, err = UnpadBuffer(msg)
 	return
 }
 
@@ -162,33 +162,33 @@ func DemoEncryption() {
 
 func DemoDecryption() {
 	msg := []byte("Hello, world")
-        fmt.Println("[+] generating key")
+	fmt.Println("[+] generating key")
 	key, err := GenerateKey()
 	if err != nil {
 		fmt.Println("[!] couldn't generate key:", err.Error())
 		return
 	}
 
-        fmt.Println("[+] encrypting")
+	fmt.Println("[+] encrypting")
 	ct, err := Encrypt(key, msg)
 	if err != nil {
 		fmt.Println("[!] encryption failure:", err.Error())
 		return
 	}
 
-        fmt.Println("[+] decrypting")
-        pt, err := Decrypt(key, ct)
-        if err != nil {
-                fmt.Println("couldn't decrypt:", err.Error())
-                return
-        }
+	fmt.Println("[+] decrypting")
+	pt, err := Decrypt(key, ct)
+	if err != nil {
+		fmt.Println("couldn't decrypt:", err.Error())
+		return
+	}
 
-        fmt.Printf("[+] comparing messages: ")
-        if !bytes.Equal(msg, pt) {
-                fmt.Println("failed!")
-        } else {
-                fmt.Println("ok")
-        }
+	fmt.Printf("[+] comparing messages: ")
+	if !bytes.Equal(msg, pt) {
+		fmt.Println("failed!")
+	} else {
+		fmt.Println("ok")
+	}
 }
 
 func main() {
@@ -196,7 +196,7 @@ func main() {
 
 	SlideDemo[11] = PadHelloWorld
 	SlideDemo[17] = DemoEncryption
-        SlideDemo[18] = DemoDecryption
+	SlideDemo[18] = DemoDecryption
 
 	slide := flag.Int("slide", 0, "slide number")
 	flag.Parse()

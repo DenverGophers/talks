@@ -4,9 +4,9 @@ import "crypto/sha512"
 import "fmt"
 
 func SHA512(message []byte) []byte {
-        c := sha512.New()
-        c.Write(message)
-        return c.Sum(nil)
+	c := sha512.New()
+	c.Write(message)
+	return c.Sum(nil)
 }
 
 func main() {
