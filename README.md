@@ -1,7 +1,9 @@
 Next Meetup
 ==========
 
-* Date: Thursday, March 27, 2014
+## This is not a regular meetup, it is the Pre-GopeherCon Kickoff Party!
+
+* Date: Wednesday, April 23, 2014
 * Time: 6:30 - 9:00
 * Where: [Galvanize: 1062 Delaware Street, Denver CO 80204](http://goo.gl/TqlYe)
 * RSVP: [www.meetup.com/Denver-Go-Language-User-Group](http://www.meetup.com/Denver-Go-Language-User-Group/events/159414062/)
@@ -11,16 +13,29 @@ Next Meetup
 Agenda
 --------
 
-* 6:30 - Meet and Greet. Drink some beer and eat some pizza compliments of [Pivotal Labs](http://www.pivotallabs.com/).
-* 7:00 - 7:10 - Intro to Go Lightning Talk - [Cory LaNou](https://github.com/corylanou) - [@supportlocal](https://twitter.com/supportlocal)
-* 7:10 - 7:30 - allegory to some unique/interesting parts of the language and stdlib - [Kevin Gillette] (https://github.com/extemporalgenome)
-* 7:30 - 8:00 - Go framework for controlling hardware via a beaglebone - [Craig Swank](https://bitbucket.org/cswank).
-* 8:00 - 8:30 - Taking Back the Command Line with Go - [Mike Gehard](http://msgehard.github.io/) - [@pivotallabs](https://twitter.com/pivotallabs)
-* 8:30 - 9:00 - Round table discussions, questions, pair programming
+* 5:00 - 5:15 - Welcoming of the participants
+* 5:15 - 5:45 - Introduction to the latest version of Docker by [Victor Vieux](https://twitter.com/vieux)
+* 5:45 - 6:00 - Q&As
+* 6:00 - 6:10 - Deis and Docker by [Gabriel Monroy](https://twitter.com/gabrtv)
+* 6:15 - 9:00 - Kick off party
 
+We will have our party at Gather, the front bar and cafe of Galvanize.
+There will be a sign at the door promoting the party.
+
+Sponsors
+---------------
+* [iron.io](http://www.iron.io/)
+* [pivotaltracker](http://www.pivotaltracker.com)
+* [docker.io](http://www.docker.io)
+* [coreos.com/](https://coreos.com/)
+* [sourcegraph.com](https://sourcegraph.com/)
+
+
+<!---
 We meet in the ViaWest Cloud Conference Room East.  
 Just walk through Gather (the restaruant) and we are in the second conference room on the left.  
 There will be a sign outside the door promoting our meetup.
+-->
 
 
 ### [Past Meetups/Talks](https://github.com/DenverGophers/talks/blob/master/PAST.md)

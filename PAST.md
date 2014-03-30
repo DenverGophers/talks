@@ -5,6 +5,14 @@ This is a list of slide presentations that we have had at the [Denver Gopher](ht
 
 Click any of the presentations below to view the slide shows or pdf.
 
+March 27, 2014
+--------------
+
+* [Intro to Go Lightning Talk](http://denvergophers.com/2014-03/intro_go_lightning.slide#1) presented by [Cory LaNou](https://github.com/corylanou) - [@supportlocal](https://twitter.com/supportlocal)
+* allegory to some unique/interesting parts of the language and stdlib - [Kevin Gillette] (https://github.com/extemporalgenome)
+* Go framework for controlling hardware via a beaglebone - [Craig Swank](https://bitbucket.org/cswank).
+* Taking Back the Command Line with Go - [Mike Gehard](http://msgehard.github.io/) - [@pivotallabs](https://twitter.com/pivotallabs)
+
 February 27, 2014
 --------
 
