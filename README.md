@@ -4,10 +4,10 @@ Next Meetup
 ## This is not a regular meetup, it is the Pre-GopeherCon Kickoff Party!
 
 * Date: Wednesday, April 23, 2014
-* Time: 6:30 - 9:00
+* Time: 5:00 - 10:00
 * Where: [Galvanize: 1062 Delaware Street, Denver CO 80204](http://goo.gl/TqlYe)
-* RSVP: [www.meetup.com/Denver-Go-Language-User-Group](http://www.meetup.com/Denver-Go-Language-User-Group/events/159414062/)
-* Amenities: Free beer and pizza compliments of [Pivotal Labs](http://www.pivotallabs.com/)
+* RSVP: [www.meetup.com/Denver-Go-Language-User-Group](http://www.meetup.com/Denver-Go-Language-User-Group/events/159413352/)
+<!--* Amenities: Free beer and pizza compliments of [Pivotal Labs](http://www.pivotallabs.com/)-->
 
 
 Agenda
