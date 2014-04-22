@@ -24,6 +24,11 @@ Agenda
   * 7:20 - 7:30 - [Juju](https://github.com/juju) by Antonio Rosales - [Juju team](https://juju.ubuntu.com/)
   * 7:30 - 7:40 - [InfluxDB](http://influxdb.org/) by [Paul Dix](https://twitter.com/pauldix)
   * 7:40 - 7:50 - IntelliJ plugin for Go by [Florin Patan](https://twitter.com/dlsniper)
+  * 7:50 - 8:00 - Streaming s3 client packag and CLI by [Randall McPherson](https://github.com/rlmcpherson/s3gof3r)
+  * 8:00 - 8:10 - [makex](https://github.com/sourcegraph/makex): a Go "make" clone for writing simpler build tools by [Quinn Slack](https://twitter.com/sqs)
+  * 8:10 - 8:20 - An introduction to Consul by [Armon Dadgar](https://twitter.com/armon)
+  * 8:20 - 8:30 - Meet [upper.io/db](upper.io/db) by [José Carlos](https://github.com/xiam)
+  * 8:30 - 8:40 - [DVID](https://github.com/janelia-flyem/dvid) by [Bill Katz](https://github.com/DocSavage)
 
 We will have our party at Gather, the front bar and cafe of Galvanize.
 There will be a sign at the door promoting the party.
