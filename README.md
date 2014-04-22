@@ -1,7 +1,7 @@
 Next Meetup
 ==========
 
-## This is not a regular meetup, it is the Pre-GopeherCon Kickoff Party!
+## This is not a regular meetup, it is the Pre-GopherCon Kickoff Party!
 
 * Date: Wednesday, April 23, 2014
 * Time: 5:00 - 10:00
@@ -28,7 +28,6 @@ Agenda
   * 8:00 - 8:10 - [makex](https://github.com/sourcegraph/makex): a Go "make" clone for writing simpler build tools by [Quinn Slack](https://twitter.com/sqs)
   * 8:10 - 8:20 - An introduction to Consul by [Armon Dadgar](https://twitter.com/armon)
   * 8:20 - 8:30 - Meet [upper.io/db](upper.io/db) by [José Carlos](https://github.com/xiam)
-  * 8:30 - 8:40 - [DVID](https://github.com/janelia-flyem/dvid) by [Bill Katz](https://github.com/DocSavage)
 
 We will have our party at Gather, the front bar and cafe of Galvanize.
 There will be a sign at the door promoting the party.
