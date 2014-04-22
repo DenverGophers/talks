@@ -17,7 +17,13 @@ Agenda
 * 5:15 - 5:45 - Introduction to the latest version of Docker by [Victor Vieux](https://twitter.com/vieux)
 * 5:45 - 6:00 - Q&As
 * 6:00 - 6:10 - Deis and Docker by [Gabriel Monroy](https://twitter.com/gabrtv)
-* 6:15 - 9:00 - Kick off party
+* 6:15 - 7:00 - Kick off party begins
+* 7:00 - 8:00 - Lightning talks in Atrium
+  * 7:00 - 7:10 - [Generics Tool](http://clipperhouse.github.io/gen/) by [Matt Sherman](https://twitter.com/clipperhouse)
+  * 7:10 - 7:20 - [GoBuild.io](http://gobuild.io/) by [Jiahua Chen](https://github.com/Unknwon)
+  * 7:20 - 7:30 - [Juju](https://github.com/juju) by Antonio Rosales - [Juju team](https://juju.ubuntu.com/)
+  * 7:30 - 7:40 - [InfluxDB](http://influxdb.org/) by [Paul Dix](https://twitter.com/pauldix)
+  * 7:40 - 7:50 - IntelliJ plugin for Go by [Florin Patan](https://twitter.com/dlsniper)
 
 We will have our party at Gather, the front bar and cafe of Galvanize.
 There will be a sign at the door promoting the party.
