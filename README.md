@@ -1,3 +1,9 @@
+# Gophercon in session!
+
+Thanks for such a successful Gophercon kick-off party!
+
+We are at GopherCon for the next couple days if you are looking for us!
+
 Next Meetup
 ==========
 
