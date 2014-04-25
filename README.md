@@ -1,15 +1,12 @@
 Next Meetup
 ==========
 
-## This is not a regular meetup, it is the Pre-GopherCon Kickoff Party!
-
 * Date: Thursday, May 22, 2014
 * Time: 6:30 - 9:00
 * Where: [SendGrid: 1451 Larimer Street, 3rd Floor](https://www.google.com/maps/place/1451+Larimer+St/@39.7481075,-104.9988656,17z/data=!3m1!4b1!4m2!3m1!1s0x876c78c56c8c97a9:0x5d8afe7cd097f085)
 * RSVP: [www.meetup.com/Denver-Go-Language-User-Group](http://www.meetup.com/Denver-Go-Language-User-Group/events/174164092/)
 
 Amenities: Free beer and pizza compliments of [Pivotal Labs](http://www.pivotallabs.com/)
-
 
 Agenda
 --------
