@@ -5,6 +5,21 @@ This is a list of slide presentations that we have had at the [Denver Gopher](ht
 
 Click any of the presentations below to view the slide shows or pdf.
 
+April 23, 2014
+-------------------
+
+This was a GopherConkickoff party.  Here were the lightning talkes
+
+* [gen](http://clipperhouse.github.io/gen/) by [Matt Sherman](https://twitter.com/clipperhouse)
+* [GoBuild.io](http://gobuild.io/) by [Jiahua Chen](https://github.com/Unknwon)
+* [Juju](https://github.com/juju) by Antonio Rosales - [Juju team](https://juju.ubuntu.com/)
+* [InfluxDB](http://influxdb.org/) by [Paul Dix](https://twitter.com/pauldix)
+* IntelliJ plugin for Go by [Florin Patan](https://twitter.com/dlsniper)
+* Streaming s3 client packag and CLI by [Randall McPherson](https://github.com/rlmcpherson/s3gof3r)
+* [makex](https://github.com/sourcegraph/makex): a Go "make" clone for writing simpler build tools by [Quinn Slack](https://twitter.com/sqs)
+* An introduction to Consul by [Armon Dadgar](https://twitter.com/armon)
+* Meet [upper.io/db](upper.io/db) by [José Carlos](https://github.com/xiam)
+
 March 27, 2014
 --------------
 
