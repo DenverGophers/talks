@@ -10,9 +10,10 @@ Amenities: Free beer and pizza compliments of [Pivotal Labs](http://www.pivotall
 
 Agenda
 --------
-• 6:30 - Meet and Greet. Drink some beer and eat some pizza compliments of Pivotal Labs http://www.pivotallabs.com/
-• 7:00 - 8:00 - Talks/Presentations TBD
-• 8:30 - 9:00 - Round table discussions, questions, pair programming
+* 6:30 - Meet and Greet. Drink some beer and eat some pizza compliments of Pivotal Tracker https://www.pivotaltracker.com/
+* 7:00 - 7:30 - Experiences in Teaching Go by [Aaron Ellis](https://github.com/aodin)
+* 7:30 - 8:00 - Modern Day File Uploads with Go [Levi Cook](https://github.com/levicook)
+* 8:30 - 9:00 - Round table discussions, questions, pair programming
 
 Github repo for this meetup: denvergophers.github.io
 
