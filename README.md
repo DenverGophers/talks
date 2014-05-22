@@ -6,7 +6,7 @@ Announcements
 
 ### [Gopher Alliance](http://www.gopheralliance.com/) Training July 26th-27th
 > Hands on instructor lead traning.  Day 1: Course Material.  Day 2: Project based hands on learning.
-> More information coming next week.
+> More information coming next week. Sign up on our site for email notifications or follow us on twitter [@GopherAlliance](https://twitter.com/gopheralliance)
 
 Next Meetup
 ----------
