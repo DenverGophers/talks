@@ -1,5 +1,15 @@
+Announcements
+------------
+
+### [dotGo](http://www.dotgo.eu/) - European Go conference
+> Special offer for Denver Go Members.  Use code GOLANGDENVER for 20% off the ticket price
+
+### [Gopher Alliance](http://www.gopheralliance.com/) Training July 26th-27th
+> Hands on instructor lead traning.  Day 1: Course Material.  Day 2: Project based hands on learning.
+> More information coming next week.
+
 Next Meetup
-==========
+----------
 
 * Date: Thursday, May 22, 2014
 * Time: 6:30 - 9:00
