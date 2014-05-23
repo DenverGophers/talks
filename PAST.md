@@ -10,7 +10,7 @@ May 22, 2014
 
 * 7:00 - 7:30 - Experiences in Teaching Go by [Aaron Ellis](https://github.com/aodin)
 * 7:30 - 8:00 - [Modern Day File Uploads with Go](https://github.com/levicook/upload-demo) by  [Levi Cook](https://github.com/levicook)
-* 8:00 - 8:30 - SendGrid Presents!
+* 8:00 - 8:30 - [Coffe Shop Concurrency Demo](https://github.com/vaskoz/coffee-shop) by [Vasko Zdravevski](https://github.com/vaskoz)
 
 
 April 23, 2014
