@@ -23,7 +23,7 @@ Amenities: Free beer and pizza compliments of [SendGrid](http://www.sendgrid.com
 
 Agenda
 --------
-* 6:30 - Meet and Greet. Drink some beer and eat some pizza compliments of Pivotal Tracker https://www.pivotaltracker.com/
+* 6:30 - Meet and Greet. Drink some beer and eat some pizza compliments of [SendGrid](http://www.sendgrid.com/)
 * 7:00 - 8:00 - TBD
 * 8:30 - 9:00 - Round table discussions, questions, pair programming
 
@@ -41,7 +41,7 @@ After 8 P.M. the front doors will be locked.  If you come late and need access, 
 
 Sponsors
 ---------------
-* [pivotaltracker](http://www.pivotaltracker.com)
+* [SendGrid](http://www.sendgrid.com)
 
 ### [Past Meetups/Talks](https://github.com/DenverGophers/talks/blob/master/PAST.md)
 > View a list of our past meetups, links to presentations and talks.
