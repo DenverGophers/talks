@@ -5,6 +5,14 @@ This is a list of slide presentations that we have had at the [Denver Gopher](ht
 
 Click any of the presentations below to view the slide shows or pdf.
 
+May 22, 2014
+--------------
+
+* 7:00 - 7:30 - Experiences in Teaching Go by [Aaron Ellis](https://github.com/aodin)
+* 7:30 - 8:00 - Modern Day File Uploads with Go [Levi Cook](https://github.com/levicook)
+* 8:00 - 8:30 - SendGrid Presents!
+
+
 April 23, 2014
 -------------------
 
