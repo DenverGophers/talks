@@ -1,12 +1,9 @@
 Announcements
 ------------
 
-### [dotGo](http://www.dotgo.eu/) - European Go conference
-> Special offer for Denver Go Members.  Use code GOLANGDENVER for 20% off the ticket price
-
-### [Gopher Alliance](http://www.gopheralliance.com/) Training July 26th-27th
-> Hands on instructor lead traning.  Day 1: Course Material.  Day 2: Project based hands on learning.
-> More information coming next week. Sign up on our site for email notifications or follow us on twitter [@GopherAlliance](https://twitter.com/gopheralliance)
+### [Beginning Go](http://www.meetup.com/Denver-Go-Language-User-Group/events/193788012/) Additional Monthly Denver Go Meetup
+> We will be meeting on the second Tuesday of each month at Galvanize to focus on go for beginners.
+> This can be for experienced devlopers new to go, or new developers as well.
 
 ### Slack Channel for Gophers - [gophers.slack.com](https://gophers.slack.com)
 > To get added, please send an email to [slack@gopheracademy.com](mailto:slack@gopheracademy.com).  
@@ -14,7 +11,7 @@ Announcements
 Next Meetup
 ----------
 
-* Date: Thursday, June 26, 2014
+* Date: Thursday, July 24, 2014
 * Time: 6:30 - 9:00
 * Where: [SendGrid: 1451 Larimer Street, 3rd Floor](https://www.google.com/maps/place/1451+Larimer+St/@39.7481075,-104.9988656,17z/data=!3m1!4b1!4m2!3m1!1s0x876c78c56c8c97a9:0x5d8afe7cd097f085)
 * RSVP: [www.meetup.com/Denver-Go-Language-User-Group](http://www.meetup.com/Denver-Go-Language-User-Group/events/174164092/)
@@ -24,8 +21,10 @@ Amenities: Free beer and pizza compliments of [SendGrid](http://www.sendgrid.com
 Agenda
 --------
 * 6:30 - Meet and Greet. Drink some beer and eat some pizza compliments of [SendGrid](http://www.sendgrid.com/)
-* 7:00 - 8:00 - TBD
-* 8:30 - 9:00 - Round table discussions, questions, pair programming
+* 7:00 - 7:15 - Announcments
+* 7:15 - 7:45 - [Prolog in Go](https://github.com/mndrix/golog) - [Michael Hendricks](https://github.com/mndrix)
+* 7:45 - 8:15 - Building an editor plugin for Go - [Joe Fitzgerald](https://twitter.com/joefitzgerald)
+* 8:15 - 9:00 - Round table discussions, questions, pair programming, social interaction
 
 Github repo for this meetup: denvergophers.github.io
 
