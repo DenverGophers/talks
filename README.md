@@ -22,6 +22,9 @@ Agenda
 --------
 * 6:30 - Meet and Greet. Drink some beer and eat some pizza compliments of [SendGrid](http://www.sendgrid.com/)
 * 7:00 - 7:15 - Announcments
+	* Additional Go Meetup - Second Monday of each month at Galvanize - Beginning Go
+	* gSchool - Intro to Go Course
+	* CommercialTribe is looking for a mid to senior level developer. Should be comfortable with js and willing to dive into a MEAN stack (if only we used postgresql instead of mongo). They can checkout our website commercialtribe.com or talk to me for more information.
 * 7:15 - 7:45 - [Prolog in Go](https://github.com/mndrix/golog) - [Michael Hendricks](https://github.com/mndrix)
 * 7:45 - 8:15 - Building an editor plugin for Go - [Joe Fitzgerald](https://twitter.com/joefitzgerald)
 * 8:15 - 9:00 - Round table discussions, questions, pair programming, social interaction
