@@ -5,6 +5,15 @@ Announcements
 > We will be meeting on the second Tuesday of each month at Galvanize to focus on go for beginners.
 > This can be for experienced devlopers new to go, or new developers as well.
 
+### * gSchool - Intro to Go Course
+> gSchool is introducing a 2 week, 4 day class that will run September 2nd, 4th, 9th, 11th (Tuesday/Thursday) from 6 to 9 PM.
+> Cost will be $329.  Curriculum will be posted next week.
+
+### CommercialTribe is hiring!
+> CommercialTribe is looking for a mid to senior level developer.
+> Should be comfortable with js and willing to dive into a MEAN stack (if only we used postgresql instead of mongo).,
+> They can checkout our website [commercialtribe.com](http://commercialtribe.com) or talk to me for more information.
+
 ### Slack Channel for Gophers - [gophers.slack.com](https://gophers.slack.com)
 > To get added, please send an email to [slack@gopheracademy.com](mailto:slack@gopheracademy.com).  
 
@@ -22,9 +31,6 @@ Agenda
 --------
 * 6:30 - Meet and Greet. Drink some beer and eat some pizza compliments of [SendGrid](http://www.sendgrid.com/)
 * 7:00 - 7:15 - Announcments
-	* Additional Go Meetup - Second Monday of each month at Galvanize - Beginning Go
-	* gSchool - Intro to Go Course
-	* CommercialTribe is looking for a mid to senior level developer. Should be comfortable with js and willing to dive into a MEAN stack (if only we used postgresql instead of mongo). They can checkout our website commercialtribe.com or talk to me for more information.
 * 7:15 - 7:45 - [Prolog in Go](https://github.com/mndrix/golog) - [Michael Hendricks](https://github.com/mndrix)
 * 7:45 - 8:15 - Building an editor plugin for Go - [Joe Fitzgerald](https://twitter.com/joefitzgerald)
 * 8:15 - 9:00 - Round table discussions, questions, pair programming, social interaction
