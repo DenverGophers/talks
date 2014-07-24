@@ -5,7 +5,7 @@ Announcements
 > We will be meeting on the second Tuesday of each month at Galvanize to focus on go for beginners.
 > This can be for experienced devlopers new to go, or new developers as well.
 
-### * gSchool - Intro to Go Course
+### gSchool - Intro to Go Course
 > gSchool is introducing a 2 week, 4 day class that will run September 2nd, 4th, 9th, 11th (Tuesday/Thursday) from 6 to 9 PM.
 > Cost will be $329.  Curriculum will be posted next week.
 
