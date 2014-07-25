@@ -2,7 +2,7 @@ Announcements
 ------------
 
 ### [Beginning Go](http://www.meetup.com/Denver-Go-Language-User-Group/events/193788012/) Additional Monthly Denver Go Meetup
-> We will be meeting on the second Tuesday of each month at Galvanize to focus on go for beginners.
+> We will be meeting on the second Monday of each month at Galvanize to focus on go for beginners.
 > This can be for experienced devlopers new to go, or new developers as well.
 
 ### gSchool - Intro to Go Course
@@ -13,6 +13,9 @@ Announcements
 > CommercialTribe is looking for a mid to senior level developer.
 > Should be comfortable with js and willing to dive into a MEAN stack (if only we used postgresql instead of mongo).,
 > They can checkout our website [commercialtribe.com](http://commercialtribe.com) or talk to me for more information.
+
+### SendGrid is hiring
+> Check out [sendgrid.com/careers](http://sendgrid.com/careers)
 
 ### Slack Channel for Gophers - [gophers.slack.com](https://gophers.slack.com)
 > To get added, please send an email to [slack@gopheracademy.com](mailto:slack@gopheracademy.com).  
