@@ -14,8 +14,8 @@ July 24, 2014
 June 17, 2014
 --------------
 
-* Lightning Talks by  [Kevin Gillette](https://github.com/extemporalgenome)
-
+* [Iterators](http://go-talks.appspot.com/github.com/extemporalgenome/gotalks/iter.slide) by  [Kevin Gillette](https://github.com/extemporalgenome)
+* [Iwa](http://go-talks.appspot.com/github.com/extemporalgenome/gotalks/lwa.slide) by  [Kevin Gillette](https://github.com/extemporalgenome)
 
 May 22, 2014
 --------------
