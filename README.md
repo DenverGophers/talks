@@ -1,13 +1,13 @@
 Announcements
 ------------
 
-### [Beginning Go](http://www.meetup.com/Denver-Go-Language-User-Group/events/193788012/) Additional Monthly Denver Go Meetup
-> We will be meeting on the second Monday of each month at Galvanize to focus on go for beginners.
-> This can be for experienced devlopers new to go, or new developers as well.
-
-### gSchool - Intro to Go Course
+### [gSchool - Intro to Go Course](http://www.meetup.com/gSchool-Denver-Boulder-Fort-Collins/events/197607932/)
 > gSchool is introducing a 2 week, 4 day class that will run September 2nd, 4th, 9th, 11th (Tuesday/Thursday) from 6 to 9 PM.
 > Cost will be $329.  Curriculum will be posted next week.
+
+### StackEngine is Hiring a Go Developer!
+> StackEngine is based in Austin, TX, but hiring anywhere in the US they find a good Candidate.
+> You can view the job description  at [stackengine.com/about/](http://stackengine.com/about/)
 
 ### CommercialTribe is hiring!
 > CommercialTribe is looking for a mid to senior level developer.
@@ -18,7 +18,7 @@ Announcements
 > Check out [sendgrid.com/careers](http://sendgrid.com/careers)
 
 ### Slack Channel for Gophers - [gophers.slack.com](https://gophers.slack.com)
-> To get added, please send an email to [slack@gopheracademy.com](mailto:slack@gopheracademy.com).  
+> To get added, please send an email to [slack@gopheracademy.com](mailto:slack@gopheracademy.com).
 
 Next Meetup
 ----------
