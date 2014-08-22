@@ -29,7 +29,7 @@ About The Organizers
 [twitter](https://twitter.com/levicook)
 [g+](https://plus.google.com/100303354759468796601/posts)
 [github](https://github.com/levicook)
-> Levi Cook is a founder and Chief Technology Officer at [SupportLocal](http://www.supportlocal.com) and is in charge of leading the company’s engineering team.  
+> Levi Cook is a founder and Chief Technology Officer at [SupportLocal](http://www.supportlocal.com) and is in charge of leading the company’s engineering team.
 Mr. Cook is a seasoned open-source programmer. He has been a featured speaker at numerous programming conferences and regional software groups. 
 He is also the author of a number of published articles, including IBM Developer Works. He has over 13 years of experience in developing software applications. 
 He is a specialist in development practices required for building large-scale Internet-based applications. An Internet industry veteran, Mr. Cook has 
@@ -45,11 +45,14 @@ claim and benefit management systems, as well as serving as a Senior IT Consulta
 [twitter](https://twitter.com/corylanou)
 [g+](https://plus.google.com/117716200974674608040/posts)
 [github](https://github.com/corylanou)
->Cory LaNou is a Founder and Chief Information Officer at [SupportLocal](http://www.supportlocal.com) and is responsible for leading all application development efforts.
-Prior to SupportLocal, Mr. LaNou was the founding engineer of LocalLaunch. At LocalLaunch, he was responsible for leading and implementing the first 
+>Cory LaNou is a full stack web developer with over 15 years of experience.  Following many years of being a successful serial entrepreneur,
+he has joined the [http://galvanize.it/school](gSchool.it) team and is currently co-leading the [Go](http://golang.org) curriculum.
+Prior to joining the gSchool team at [http://galvanize.it](Galvanize),
+Mr. LaNou was the Chief Information Officer and Founder at [SupportLocal](http://www.supportlocal.com) and responsible for leading all application development efforts.
+Before SupportLocal he was the founding engineer of LocalLaunch. At LocalLaunch, he was responsible for leading and implementing the first 
 set of core architecture including customer relationship management tools, automated billing, product setup and configuration, API integrations with Google and Yahoo, 
 in addition to all reporting interfaces. Mr. LaNou played the key role in the technology and architecture of the award-winning LocalLaunch software platform.
-Mr. LaNou has over 14 years of industry experience in software and network engineering. Prior to LocalLaunch, Mr. Lanou founded and served as CIO of Pulsity, Inc. a 
+Prior to LocalLaunch, Mr. Lanou founded and served as CIO of Pulsity, Inc. a 
 leading Internet strategy firm. At Pulsity, Inc. he lead all application development efforts and oversaw the build of over a hundred Internet based software applications. 
 Previously, Mr. Lanou served as lead application developer at Computer Discount Warehouse ([cdw.com](http://www.cdw.com)), where he played a key role in executing the 
 strategy behind Microsoft’s first e-commerce partner venture, code named “Nitro”. Mr. LaNou also consulted with industry leaders such as 3com, Hewlett Packard, and IBM. 
