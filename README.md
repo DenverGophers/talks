@@ -1,23 +1,12 @@
 Announcements
 ------------
 
-### [gSchool - Intro to Go Course](http://www.meetup.com/gSchool-Denver-Boulder-Fort-Collins/events/197607932/)
-> gSchool is introducing a 2 week, 4 day class that will run September 2nd, 4th, 9th, 11th (Tuesday/Thursday) from 6 to 9 PM.
-> Cost will be $329.  Curriculum will be posted next week.
-
-### StackEngine is Hiring a Go Developer!
-> StackEngine is based in Austin, TX, but hiring anywhere in the US they find a good Candidate.
-> You can view the job description  at [stackengine.com/about/](http://stackengine.com/about/)
-
-### CommercialTribe is hiring!
-> CommercialTribe is looking for a mid to senior level developer.
-> Should be comfortable with js and willing to dive into a MEAN stack (if only we used postgresql instead of mongo).,
-> They can checkout our website [commercialtribe.com](http://commercialtribe.com) or talk to me for more information.
+### [gSchool - Go Immersive - 12 weeks](http://www.galvanize.it/gschool-denver-go)
+> gSchool is launching a 12 week Go immersive. There are scholarships available, as well as referral bonuses for 
+> recommending successful candidates! We will be posting a curriculum shortly!
 
 ### SendGrid is hiring
 > Check out [sendgrid.com/careers](http://sendgrid.com/careers)
-
-### gSchool is Hiring Instructors!
 
 
 ### Slack Channel for Gophers - [gophers.slack.com](https://gophers.slack.com)
