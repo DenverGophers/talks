@@ -15,7 +15,7 @@ November 10, 2014 - Beginning Go
 
 October 23, 2014
 ---------------
-* Reforming Healthcare with Go - [Austin Riendeau](https://twitter.com/apriendeau)
+* [Reforming Healthcare with Go](http://apriendeau.com/reforming-healthcare/) - [Austin Riendeau](https://twitter.com/apriendeau)
 * Relational Databases with Go - [Aaron Ellis](https://twitter.com/aaronoellis)
 
 October 13, 2014 - Beginning Go
