@@ -23,13 +23,13 @@ Announcements
 ### Slack Channel for Gophers - [gophers.slack.com](https://gophers.slack.com)
 > To get added, fill out the form here: [Gophers.slack.com Invite Form](https://docs.google.com/a/galvanize.it/forms/d/1Wk7Alq-lp9sgH3h___zMPmh4gAaghsGpnnsW0Pa_9Ik/viewform?fbzx=4754263898376949596#start=invite)please send an email to [slack@gopheracademy.com](mailto:slack@gopheracademy.com).
 
-Next Meetup
+Next Meetup - Beginning Go - gSchool
 ----------
 
-* Date: Monday, Aug 11, 2014
+* Date: Monday, Jan 12, 2014
 * Time: 6:00 - 9:00
 * Where: [Galvanize: 1062 Delaware St, gSchool Training Room](https://www.google.com/maps/place/Galvanize/@39.733489,-104.992522,17z/data=!3m1!4b1!4m7!1m4!3m3!1s0x876c7f2c1488519d:0xc08b308e3430cf62!2sGalvanize!3b1!3m1!1s0x876c7f2c1488519d:0xc08b308e3430cf62)
-* RSVP: [www.meetup.com/Denver-Go-Language-User-Group](http://www.meetup.com/Denver-Go-Language-User-Group/events/193788012/)
+* RSVP: [www.meetup.com/Denver-Go-Language-User-Group](http://www.meetup.com/Denver-Go-Language-User-Group/events/214827422/)
 
 Amenities: Free beer and pizza compliments of [gSchool](http://www.galvanize.it/school/)
 
@@ -37,8 +37,8 @@ Agenda
 --------
 * 6:30 - Meet and Greet. Drink some beer and eat some pizza compliments of [gSchool](http://www.galvanize.it/school/)
 * 7:00 - 7:15 - Announcments
-* 7:15 - 7:45 - From Rails to Go - [Will Mitchell](https://github.com/wvmitchell)
-* 7:45 - 8:15 - Installing Go - [Cory LaNou](https://github.com/corylanou)
+* 7:15 - 7:45 - TBD
+* 7:45 - 8:15 - TBD
 * 8:15 - 9:00 - Round table discussions, questions, pair programming, social interaction
 
 Github repo for this meetup: denvergophers.github.io

@@ -5,6 +5,41 @@ This is a list of slide presentations that we have had at the [Denver Gopher](ht
 
 Click any of the presentations below to view the slide shows or pdf.
 
+November 18, 2014
+--------------
+* [Open Sourcing Packages in Go](http://go-talks.appspot.com/github.com/extemporalgenome/gotalks/open-source.slide#1) - [Kevin Gillette](https://github.com/extemporalgenome)
+
+November 10, 2014 - Beginning Go
+----------------
+* [RESTful JSON api in Go](http://go-talks.appspot.com/github.com/gSchool/go/Exercises/Web-Services-API/presentation.slide#1) - [Cory LaNou](https://twitter.com/corylanou)
+
+October 23, 2014
+---------------
+* Reforming Healthcare with Go - [Austin Riendeau](https://twitter.com/apriendeau)
+* Relational Databases with Go - [Aaron Ellis](https://twitter.com/aaronoellis)
+
+October 13, 2014 - Beginning Go
+---------------
+* [Command Line Programming](http://go-talks.appspot.com/github.com/gSchool/go/Exercises/Command-Line-Programming/presentation.slide#1) - [Cory LaNou](https://twitter.com/corylanou)
+
+September 25, 2014
+-----------------
+* [Go Generate Tool](http://go-talks.appspot.com/github.com/extemporalgenome/gotalks/generate.slide#1) - [Kevin Gillette](https://github.com/extemporalgenome)
+* Why I chose rails over Go - [David Nix](https://github.com/DavidNix)
+
+September 8, 2014 - Beginning Go
+-------------
+* [Introduction to Go Programming](http://www.golang-book.com/) written by [Caleb Doxsey](mailto:admin@golang-book.com), presented by [Cory LaNou](https://twitter.com/corylanou)
+August 28, 2014
+-------------
+
+* [Testing in Go](http://go-talks.appspot.com/github.com/stretchr/tdd-present/tdd-in-go.slide#1) - [Mat Ryer](https://github.com/matryer)
+
+August 11, 2014 - Beginning Go Meetup
+--------------
+* From Rails to Go - [Will Mitchell](https://github.com/wvmitchell)
+* [Installing Go](https://github.com/gSchool/go/tree/master/Exercises/Installing-Go) - [Cory LaNou](https://github.com/corylanou)
+
 July 24, 2014
 -------------
 * [Prolog in Go](https://github.com/mndrix/golog) - [Michael Hendricks](https://github.com/mndrix)
