@@ -55,7 +55,7 @@ June 17, 2014
 May 22, 2014
 --------------
 
-* Experiences in Teaching Go by [Aaron Ellis](https://github.com/aodin)
+* [Experiences in Teaching Go](http://aaronoellis.com/articles/opinions-on-go) by [Aaron Ellis](https://github.com/aodin)
 * [Modern Day File Uploads with Go](https://github.com/levicook/upload-demo) by  [Levi Cook](https://github.com/levicook)
 * [Coffe Shop Concurrency Demo](https://github.com/vaskoz/coffee-shop) by [Vasko Zdravevski](https://github.com/vaskoz)
 
