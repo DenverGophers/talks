@@ -25,7 +25,7 @@ October 13, 2014 - Beginning Go
 September 25, 2014
 -----------------
 * [Go Generate Tool](http://go-talks.appspot.com/github.com/extemporalgenome/gotalks/generate.slide#1) - [Kevin Gillette](https://github.com/extemporalgenome)
-* Why I chose rails over Go - [David Nix](https://github.com/DavidNix)
+* [Why I chose rails over Go](https://s3.amazonaws.com/nix-random/RailsVsGoMeetupTalk.pdf) - [David Nix](https://github.com/DavidNix)
 
 September 8, 2014 - Beginning Go
 -------------
