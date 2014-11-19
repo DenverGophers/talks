@@ -10,7 +10,7 @@ Announcements
 
 
 ### Slack Channel for Gophers - [gophers.slack.com](https://gophers.slack.com)
-> To get added, fill out the form here: [Gophers.slack.com Invite Form](https://docs.google.com/a/galvanize.it/forms/d/1Wk7Alq-lp9sgH3h___zMPmh4gAaghsGpnnsW0Pa_9Ik/viewform?fbzx=4754263898376949596#start=invite)please send an email to [slack@gopheracademy.com](mailto:slack@gopheracademy.com).
+> To get added, fill out the form here: [Gophers.slack.com Invite Form](https://docs.google.com/a/galvanize.it/forms/d/1Wk7Alq-lp9sgH3h___zMPmh4gAaghsGpnnsW0Pa_9Ik/viewform?fbzx=4754263898376949596#start=invite)
 
 Next Meetup - Beginning Go - gSchool
 ----------
