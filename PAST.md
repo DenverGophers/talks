@@ -5,6 +5,16 @@ This is a list of slide presentations that we have had at the [Denver Gopher](ht
 
 Click any of the presentations below to view the slide shows or pdf.
 
+January 22, 2015
+--------------
+* [Genome Arithmetic in Go](http://bit.ly/bsp-go) - [Brent Pedersen](https://twitter.com/brent_p)
+* [GoLang Gotchas: Subtle Security Risks in GoLang](http://blog.securitymouse.com/) - [Don A. Baily](https://twitter.com/DonAndrewBailey)
+* [See how a Microsoft engineer enabled Go on web apps in Azure Websites](http://slides.com/wadewegner/see-how-a-microsoft-engineer-enabled-go-on-web-apps-in-azure-websites#/) - [WadeWegner](https://twitter.com/WadeWegner)
+
+January 12, 2015
+--------------
+* [Crud in Go with mongoDB](http://bit.ly/beginning-go-mongodb) - [Cory LaNou](https://twitter.com/corylanou)
+
 November 18, 2014
 --------------
 * [Open Sourcing Packages in Go](http://go-talks.appspot.com/github.com/extemporalgenome/gotalks/open-source.slide#1) - [Kevin Gillette](https://github.com/extemporalgenome)
