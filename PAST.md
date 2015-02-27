@@ -5,6 +5,12 @@ This is a list of slide presentations that we have had at the [Denver Gopher](ht
 
 Click any of the presentations below to view the slide shows or pdf.
 
+
+February 26, 2015
+--------------
+* Go Video Processing (link coming soon) - [James Holmes](https://twitter.com/32bitkid)
+* Middleware (link coming soon) - [Austin Riendeau](https://twitter.com/apriendeau)
+
 January 22, 2015
 --------------
 * [Genome Arithmetic in Go](http://bit.ly/bsp-go) - [Brent Pedersen](https://twitter.com/brent_p)

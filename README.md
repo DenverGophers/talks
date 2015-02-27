@@ -1,19 +1,26 @@
 Announcements
 ------------
 
+### Go Training
+> Ardan Labs is launching 3-day weekend workshops, as well as 5-day night workshops, several in Denver.
+> [Kevin Gillette](https://github.com/extemporalgenome) and [Cory LaNou](https://twitter.com/corylanou) will be instructors for these events.
+> Check out the [Boot Camps](http://www.ardanlabs.com/go-bootcamp-tour) and [After Hours](http://www.ardanlabs.com/go-after-hours)
+
 ### Denver Go Jobs
 > Check out [bit.ly/denver-go-jobs](http://bit.ly/denver-go-jobs)
 
-
 ### Slack Channel for Gophers - [gophers.slack.com](https://gophers.slack.com)
 > To get added, fill out the google form here: [bit.ly/go-slack-signup](https://bit.ly/go-slack-signup)
+
+### Denver Go Challenge
+> Learn Go, and win awesome prizes! [Go Challenge](http://golang-challenge.com/Golang-Challenge-FAQ/)
 
 Regular Meetup - Every Fourth Thursday of the month held at SendGrid
 ----------
 RSVP on [meetup.com/Denver-Go-Language-User-Group/](http://meetup.com/Denver-Go-Language-User-Group/)
 
-* Time: 6:00 - 9:00
-* Where: [Galvanize: 1062 Delaware St, gSchool Training Room](https://www.google.com/maps/place/Galvanize/@39.733489,-104.992522,17z/data=!3m1!4b1!4m7!1m4!3m3!1s0x876c7f2c1488519d:0xc08b308e3430cf62!2sGalvanize!3b1!3m1!1s0x876c7f2c1488519d:0xc08b308e3430cf62)
+* Time: 6:30 - 9:00
+* Where: [SendGrid: 1451 Larimer Street, 3rd Floor](https://www.google.com/maps/place/1451+Larimer+St/@39.7481075,-104.9988656,17z/data=!3m1!4b1!4m2!3m1!1s0x876c78c56c8c97a9:0x5d8afe7cd097f085)
 * RSVP: [www.meetup.com/Denver-Go-Language-User-Group](http://www.meetup.com/Denver-Go-Language-User-Group/events/214827422/)
 
 Amenities: Free beer and pizza compliments of [SendGrid](http://www.sendgrid.com/)
@@ -26,7 +33,7 @@ Agenda
 * 7:45 - 8:15 - TBD
 * 8:15 - 9:00 - Round table discussions, questions, pair programming, social interaction
 
-Github repo for this meetup: denvergophers.github.io
+Github repo for this meetup: [denvergophers.github.io](http://denvergophers.github.io)
 
 Parking
 ---------
