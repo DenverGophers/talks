@@ -2,9 +2,12 @@ Announcements
 ------------
 
 ### Go Training
-> Ardan Labs is launching 3-day weekend workshops, as well as 5-day night workshops, several in Denver.
+> [Ardan Labs](http://www.ardanlabs.com/) is launching 3-day weekend workshops, as well as 5-day night workshops, several in Denver.
 > [Kevin Gillette](https://github.com/extemporalgenome) and [Cory LaNou](https://twitter.com/corylanou) will be instructors for these events.
 > Check out the [Boot Camps](http://www.ardanlabs.com/go-bootcamp-tour) and [After Hours](http://www.ardanlabs.com/go-after-hours)
+
+Denver April Bootcamp: Thursday, April 9, 2015 at 9:00 AM - Saturday, April 11, 2015 at 5:00 PM - [Registration](https://www.eventbrite.com/e/go-programming-bootcamp-tour-denver-april-tickets-14944810330)
+Denver April After Hours: TBD
 
 ### Denver Go Jobs
 > Check out [bit.ly/denver-go-jobs](http://bit.ly/denver-go-jobs)
