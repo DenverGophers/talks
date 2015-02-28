@@ -9,7 +9,7 @@ Click any of the presentations below to view the slide shows or pdf.
 February 26, 2015
 --------------
 * Go Video Processing (link coming soon) - [James Holmes](https://twitter.com/32bitkid)
-* Middleware (link coming soon) - [Austin Riendeau](https://twitter.com/apriendeau)
+* [Middleware](https://github.com/apriendeau/middleware-slides) - [Austin Riendeau](https://twitter.com/apriendeau)
 
 January 22, 2015
 --------------
