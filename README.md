@@ -32,7 +32,7 @@ Agenda
 --------
 * 6:30 - Meet and Greet. Drink some beer and eat some pizza compliments of [SendGrid](http://www.sendgrid.com/)
 * 7:00 - 7:15 - Announcments
-* 7:15 - 7:45 - TBD - Alex Welch
+* 7:15 - 7:45 - TBD
 * 7:45 - 8:15 - TBD
 * 8:15 - 9:00 - Round table discussions, questions, pair programming, social interaction
 
